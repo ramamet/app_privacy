@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - More Or Less</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --background-dark: #1A1A2E;
+            --background-card: #252540;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B0B0B0;
+            --accent-green: #8BC34A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(180deg, var(--background-dark) 0%, #16213E 100%);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: var(--primary-color);
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+
+        .last-updated {
+            display: inline-block;
+            background: var(--background-card);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: var(--accent-green);
+            margin-top: 16px;
+        }
+
+        section {
+            background: var(--background-card);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--accent-green);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background: var(--accent-green);
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 20px 0 12px;
+            color: var(--text-primary);
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        ul {
+            color: var(--text-secondary);
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: rgba(76, 175, 80, 0.1);
+            border: 1px solid rgba(76, 175, 80, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: var(--accent-green);
+            font-weight: 500;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .data-table th {
+            color: var(--text-primary);
+            font-weight: 600;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .data-table td {
+            color: var(--text-secondary);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .badge-green {
+            background: rgba(76, 175, 80, 0.2);
+            color: var(--accent-green);
+        }
+
+        .badge-blue {
+            background: rgba(33, 150, 243, 0.2);
+            color: #64B5F6;
+        }
+
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 16px;
+        }
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--primary-color);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .contact-info h4 {
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .contact-info a {
+            color: var(--accent-green);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        footer a {
+            color: var(--accent-green);
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 16px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🍽️</div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">More Or Less: Calorie Game</p>
+            <span class="last-updated">Last Updated: December 2025</span>
+        </header>
+
+        <section>
+            <h2>Introduction</h2>
+            <p>
+                Welcome to More Or Less ("we," "our," or "us"). We are committed to protecting your privacy
+                and being transparent about how our app works. This Privacy Policy explains how we handle
+                information when you use our mobile application "More Or Less: Calorie Game" (the "App").
+            </p>
+            <div class="highlight-box">
+                <p>We do not collect, store, or share any personal information. Your privacy is our priority.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Information We Collect</h2>
+            <p>
+                More Or Less is designed with privacy in mind. We do not collect any personal information from you.
+            </p>
+
+            <h3>Data Stored Locally on Your Device</h3>
+            <p>The following data is stored only on your device and is never transmitted to us:</p>
+            <ul>
+                <li><strong>Game Progress:</strong> High scores, achievement progress, games played</li>
+                <li><strong>Preferences:</strong> Sound settings, difficulty preferences</li>
+                <li><strong>Premium Status:</strong> Whether you have purchased the premium upgrade</li>
+                <li><strong>Daily Play Count:</strong> Number of plays remaining (free users)</li>
+            </ul>
+
+            <table class="data-table">
+                <tr>
+                    <th>Data Type</th>
+                    <th>Collected?</th>
+                    <th>Shared?</th>
+                </tr>
+                <tr>
+                    <td>Personal Information (name, email)</td>
+                    <td><span class="badge badge-green">No</span></td>
+                    <td><span class="badge badge-green">No</span></td>
+                </tr>
+                <tr>
+                    <td>Location Data</td>
+                    <td><span class="badge badge-green">No</span></td>
+                    <td><span class="badge badge-green">No</span></td>
+                </tr>
+                <tr>
+                    <td>Device Identifiers</td>
+                    <td><span class="badge badge-green">No</span></td>
+                    <td><span class="badge badge-green">No</span></td>
+                </tr>
+                <tr>
+                    <td>Usage Analytics</td>
+                    <td><span class="badge badge-green">No</span></td>
+                    <td><span class="badge badge-green">No</span></td>
+                </tr>
+                <tr>
+                    <td>Game Progress (local only)</td>
+                    <td><span class="badge badge-blue">Device Only</span></td>
+                    <td><span class="badge badge-green">No</span></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Third-Party Services</h2>
+            <p>Our App uses the following third-party services:</p>
+
+            <h3>Google AdMob (Free Version Only)</h3>
+            <p>
+                The free version of our App displays advertisements provided by Google AdMob.
+                Google may collect certain information to serve personalized ads. This is handled
+                entirely by Google and is subject to
+                <a href="https://policies.google.com/privacy" target="_blank" style="color: var(--accent-green);">Google's Privacy Policy</a>.
+            </p>
+            <p>
+                Premium users do not see any advertisements, and AdMob is not active for premium accounts.
+            </p>
+
+            <h3>Google Play Billing</h3>
+            <p>
+                In-app purchases are processed through Google Play. Payment information is handled
+                entirely by Google and is never shared with us. We only receive confirmation of
+                purchase status (purchased or not purchased).
+            </p>
+        </section>
+
+        <section>
+            <h2>Children's Privacy</h2>
+            <p>
+                Our App is not specifically targeted at children under the age of 13. We do not
+                knowingly collect any personal information from children. Since our App does not
+                collect personal information from any users, we are compliant with COPPA
+                (Children's Online Privacy Protection Act) requirements.
+            </p>
+        </section>
+
+        <section>
+            <h2>Data Security</h2>
+            <p>
+                Since all game data is stored locally on your device, you have complete control over it.
+                We do not maintain any servers that store user data. Your data security depends on
+                your device's security settings.
+            </p>
+            <h3>How to Delete Your Data</h3>
+            <ul>
+                <li>Go to your device Settings</li>
+                <li>Navigate to Apps > More Or Less</li>
+                <li>Select "Clear Data" or "Clear Storage"</li>
+                <li>Alternatively, uninstall the App to remove all data</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Offline Functionality</h2>
+            <p>
+                More Or Less is designed to work completely offline. Once installed, no internet
+                connection is required to play the game. Internet is only used for:
+            </p>
+            <ul>
+                <li>Loading advertisements (free version only)</li>
+                <li>Processing in-app purchases</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Your Rights</h2>
+            <p>Since we do not collect personal data, traditional data rights (access, correction, deletion)
+               do not apply in the conventional sense. However, you always have the right to:</p>
+            <ul>
+                <li><strong>Delete local data:</strong> Clear app data through your device settings</li>
+                <li><strong>Opt out of personalized ads:</strong> Adjust your device's ad settings</li>
+                <li><strong>Remove the App:</strong> Uninstall at any time, which removes all local data</li>
+                <li><strong>Purchase Premium:</strong> Remove all advertisements from the App</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Changes to This Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. We will notify you of any changes
+                by updating the "Last Updated" date at the top of this policy. We encourage you to
+                review this Privacy Policy periodically.
+            </p>
+            <p>
+                Continued use of the App after any modifications indicates your acceptance of the
+                updated Privacy Policy.
+            </p>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <p>
+                If you have any questions or concerns about this Privacy Policy or our practices,
+                please contact us:
+            </p>
+
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <div class="contact-info">
+                    <h4>Email</h4>
+                    <a href="mailto:privacy@moreorless.ai">privacy@moreorless.ai</a>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">🌐</div>
+                <div class="contact-info">
+                    <h4>Website</h4>
+                    <a href="https://moreorless.ai" target="_blank">moreorless.ai</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Summary</h2>
+            <div class="highlight-box">
+                <p style="margin-bottom: 12px;">
+                    <strong>In short:</strong> More Or Less respects your privacy.
+                </p>
+                <p style="color: var(--text-secondary); font-weight: normal;">
+                    We don't collect your personal information. We don't track you. We don't share
+                    anything with anyone. Your game data stays on your device, and you can delete
+                    it anytime. It's that simple.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 moreorless.ai. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="https://moreorless.ai">Home</a> ·
+                <a href="https://moreorless.ai/terms">Terms of Service</a> ·
+                <a href="mailto:support@moreorless.ai">Support</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
