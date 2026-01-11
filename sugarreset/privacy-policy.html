@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for SugarReset - 100% offline, privacy-first sugar tracking app">
+    <title>Privacy Policy - SugarReset</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #FF6B6B;
+            --secondary-color: #4ECDC4;
+            --text-dark: #2C3E50;
+            --text-light: #546E7A;
+            --bg-light: #F8F9FA;
+            --bg-white: #FFFFFF;
+            --border-color: #E0E0E0;
+            --success-color: #4CAF50;
+            --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.8;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg-white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .app-name {
+            font-size: 2.5em;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .last-updated {
+            background: var(--bg-light);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+            font-size: 0.95em;
+            color: var(--text-light);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 8px 25px rgba(78, 205, 196, 0.2);
+        }
+
+        .highlight-box h2 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .highlight-box ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .highlight-box li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.05em;
+        }
+
+        .highlight-box li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--bg-light);
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: var(--text-dark);
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-light);
+            font-size: 1.05em;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: var(--text-light);
+            font-size: 1.02em;
+        }
+
+        strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .info-box {
+            background: #FFF9E6;
+            border-left: 4px solid #FFC107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+
+        .info-box p {
+            margin-bottom: 0;
+            color: var(--text-dark);
+        }
+
+        .section-number {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            margin-right: 10px;
+            font-weight: 700;
+        }
+
+        .contact-box {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .email-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .email-link:hover {
+            border-bottom-color: var(--primary-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        th {
+            background: var(--primary-color);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-light);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) {
+            background: var(--bg-light);
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--success-color);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin: 0 5px;
+        }
+
+        .badge.offline {
+            background: #2196F3;
+        }
+
+        .badge.no-account {
+            background: #9C27B0;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid var(--border-color);
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 25px;
+            }
+
+            .app-name {
+                font-size: 2em;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+        }
+
+        .toc {
+            background: var(--bg-light);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .toc ol {
+            margin-left: 20px;
+        }
+
+        .toc a {
+            color: var(--text-dark);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .toc a:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-name">SugarReset</div>
+            <div class="tagline">Privacy Policy</div>
+            <div style="margin-top: 15px;">
+                <span class="badge offline">100% Offline</span>
+                <span class="badge no-account">No Account Required</span>
+                <span class="badge">Privacy First</span>
+            </div>
+        </header>
+
+        <div class="last-updated">
+            <strong>Last Updated:</strong> January 11, 2026 | <strong>Effective Date:</strong> January 11, 2026
+        </div>
+
+        <div class="highlight-box">
+            <h2>Our Privacy Promise</h2>
+            <p>SugarReset is built with privacy as a core principle. We believe your health data belongs to you and only you.</p>
+            <ul>
+                <li><strong>100% Offline</strong> - All data stays on your device</li>
+                <li><strong>No Account Required</strong> - No registration, no email, no login</li>
+                <li><strong>No Data Collection</strong> - We don't collect, store, or transmit your personal data</li>
+                <li><strong>No Tracking</strong> - No analytics, no ads, no user profiling</li>
+                <li><strong>Full Control</strong> - Export or delete your data anytime</li>
+            </ul>
+        </div>
+
+        <div class="toc">
+            <h3>Table of Contents</h3>
+            <ol>
+                <li><a href="#section-1">Information We Collect (Spoiler: Almost Nothing)</a></li>
+                <li><a href="#section-2">How We Use Your Information</a></li>
+                <li><a href="#section-3">Data Storage and Security</a></li>
+                <li><a href="#section-4">Third-Party Services</a></li>
+                <li><a href="#section-5">Your Privacy Rights</a></li>
+                <li><a href="#section-6">Children's Privacy</a></li>
+                <li><a href="#section-7">International Data Transfers</a></li>
+                <li><a href="#section-8">Changes to This Policy</a></li>
+                <li><a href="#section-9">Contact Us</a></li>
+            </ol>
+        </div>
+
+        <h2 id="section-1"><span class="section-number">1</span>Information We Collect</h2>
+
+        <h3>1.1 Personal Health Data (Stored Locally Only)</h3>
+        <p>SugarReset stores the following information <strong>exclusively on your device</strong>. This data never leaves your phone unless you explicitly export it:</p>
+        <ul>
+            <li><strong>Daily Sugar Logs:</strong> Sugar intake amounts (in grams), timestamps, and optional notes</li>
+            <li><strong>Food Presets:</strong> Custom food items you create for quick logging</li>
+            <li><strong>Challenge Data:</strong> Active and completed sugar reduction challenges</li>
+            <li><strong>Progress Metrics:</strong> Streaks, achievements, XP levels, daily quests</li>
+            <li><strong>Settings:</strong> Daily goals, theme preferences, notification settings</li>
+            <li><strong>Craving Context (Premium):</strong> Optional mood, location type, and trigger information</li>
+        </ul>
+
+        <div class="info-box">
+            <p><strong>Important:</strong> All this data is stored using local device storage (Hive database). We have <strong>zero access</strong> to this information. Even if we wanted to see it, we technically cannot.</p>
+        </div>
+
+        <h3>1.2 Data We Never Collect</h3>
+        <p>To be crystal clear, SugarReset does <strong>NOT</strong> collect:</p>
+        <ul>
+            <li>❌ Name, email, phone number, or any identifying information</li>
+            <li>❌ Precise location data or GPS coordinates</li>
+            <li>❌ Contacts, photos, or other media files</li>
+            <li>❌ Device identifiers (IMEI, MAC address, etc.) for tracking</li>
+            <li>❌ Browsing history or app usage patterns</li>
+            <li>❌ Microphone, camera, or sensor data</li>
+            <li>❌ Health data from other apps or fitness trackers</li>
+        </ul>
+
+        <h3>1.3 Anonymous Technical Data (Opt-In Only)</h3>
+        <p>If you <strong>explicitly consent</strong> in the app settings, we may collect minimal anonymous crash reports via Sentry to improve app stability:</p>
+        <ul>
+            <li>Device type and Android version (e.g., "Pixel 7, Android 14")</li>
+            <li>App version number</li>
+            <li>Crash logs and error messages (sanitized, no personal data)</li>
+            <li>Anonymous session ID (cannot be linked to you)</li>
+        </ul>
+        <p><strong>Default Setting:</strong> Crash reporting is <strong>OFF by default</strong>. You must opt-in manually.</p>
+
+        <h2 id="section-2"><span class="section-number">2</span>How We Use Your Information</h2>
+
+        <h3>2.1 On-Device Processing</h3>
+        <p>All your health data is processed locally on your device to:</p>
+        <ul>
+            <li>Calculate daily sugar intake and show progress rings</li>
+            <li>Track streaks and determine if you've met your goals</li>
+            <li>Generate calendar heatmaps and statistics charts</li>
+            <li>Award XP, unlock achievements, and complete quests</li>
+            <li>Provide insights like "sugar cubes saved" and trend analysis</li>
+            <li>Send local notifications (reminders, achievement unlocks)</li>
+        </ul>
+        <p><strong>No cloud processing.</strong> Your device does all the work.</p>
+
+        <h3>2.2 Crash Reports (If Opted In)</h3>
+        <p>If you enable crash reporting, we use anonymous data to:</p>
+        <ul>
+            <li>Identify and fix bugs that cause app crashes</li>
+            <li>Improve app performance and stability</li>
+            <li>Test compatibility with different devices</li>
+        </ul>
+        <p>This data is processed by Sentry (see Section 4.2) and deleted after 90 days.</p>
+
+        <h2 id="section-3"><span class="section-number">3</span>Data Storage and Security</h2>
+
+        <h3>3.1 Local Storage</h3>
+        <p>All your data is stored in an encrypted local database (Hive) on your Android device. This data:</p>
+        <ul>
+            <li>Resides in your app's private storage directory</li>
+            <li>Is protected by Android's app sandboxing security</li>
+            <li>Cannot be accessed by other apps (without root access)</li>
+            <li>Is automatically deleted if you uninstall the app</li>
+        </ul>
+
+        <h3>3.2 Backup & Export</h3>
+        <p>Premium users can create manual backups:</p>
+        <ul>
+            <li><strong>JSON Backup:</strong> Exports all data to a file saved in your device's Downloads folder</li>
+            <li><strong>CSV Export:</strong> Exports logs as a spreadsheet for external analysis</li>
+        </ul>
+        <p><strong>Your responsibility:</strong> Backup files are saved to your device storage. If you share or upload them anywhere (cloud storage, email, etc.), that's outside our control. Keep backups secure.</p>
+
+        <h3>3.3 Data Retention</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Retention Period</th>
+                    <th>Deletion Method</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Daily logs, presets, challenges</td>
+                    <td>Until you delete or uninstall app</td>
+                    <td>Settings → Data Management → Delete All Data</td>
+                </tr>
+                <tr>
+                    <td>Achievements & XP</td>
+                    <td>Until you delete or uninstall app</td>
+                    <td>Settings → Data Management → Delete All Data</td>
+                </tr>
+                <tr>
+                    <td>App settings</td>
+                    <td>Until you uninstall app</td>
+                    <td>Uninstall app or reset in settings</td>
+                </tr>
+                <tr>
+                    <td>Crash reports (if opted in)</td>
+                    <td>90 days on Sentry servers</td>
+                    <td>Auto-deleted or opt-out anytime in settings</td>
+                </tr>
+                <tr>
+                    <td>Premium purchase receipt</td>
+                    <td>Indefinitely (RevenueCat)</td>
+                    <td>Contact support for deletion request</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="section-4"><span class="section-number">4</span>Third-Party Services</h2>
+
+        <h3>4.1 RevenueCat (Premium Purchases)</h3>
+        <p>When you purchase SugarReset Premium, we use RevenueCat to process the transaction. RevenueCat may collect:</p>
+        <ul>
+            <li>Anonymous user ID (randomly generated, not linked to your identity)</li>
+            <li>Purchase receipt from Google Play</li>
+            <li>Device type and app version (for subscription management)</li>
+        </ul>
+        <p><strong>Purpose:</strong> Verify premium status, enable cross-device license restore, prevent fraud</p>
+        <p><strong>RevenueCat Privacy Policy:</strong> <a href="https://www.revenuecat.com/privacy" class="email-link">https://www.revenuecat.com/privacy</a></p>
+
+        <h3>4.2 Sentry (Optional Crash Reporting)</h3>
+        <p>If you opt-in to crash reporting, Sentry collects anonymous technical data (see Section 1.3).</p>
+        <p><strong>Purpose:</strong> Improve app stability and fix bugs</p>
+        <p><strong>Sentry Privacy Policy:</strong> <a href="https://sentry.io/privacy/" class="email-link">https://sentry.io/privacy/</a></p>
+        <p><strong>Data Location:</strong> Sentry servers in the United States (GDPR compliant)</p>
+
+        <h3>4.3 Google Play Services</h3>
+        <p>SugarReset uses Google Play for app distribution and in-app purchases. Google may collect:</p>
+        <ul>
+            <li>Device information (for compatibility checks)</li>
+            <li>Install/update events</li>
+            <li>Purchase transaction data</li>
+        </ul>
+        <p><strong>Google Play Privacy Policy:</strong> <a href="https://policies.google.com/privacy" class="email-link">https://policies.google.com/privacy</a></p>
+
+        <h3>4.4 No Other Third Parties</h3>
+        <p>SugarReset does <strong>NOT</strong> use:</p>
+        <ul>
+            <li>❌ Advertising networks (no ads in app)</li>
+            <li>❌ Analytics platforms (no Google Analytics, Firebase Analytics, etc.)</li>
+            <li>❌ Social media SDKs (no Facebook, Twitter integration)</li>
+            <li>❌ Cloud storage providers (no automatic backups to cloud)</li>
+            <li>❌ AI/ML services (all calculations done on-device)</li>
+        </ul>
+
+        <h2 id="section-5"><span class="section-number">5</span>Your Privacy Rights</h2>
+
+        <h3>5.1 GDPR Rights (European Users)</h3>
+        <p>Under the General Data Protection Regulation (GDPR), you have the following rights:</p>
+        <ul>
+            <li><strong>Right to Access:</strong> Request a copy of your data (use in-app export feature)</li>
+            <li><strong>Right to Rectification:</strong> Correct inaccurate data (edit logs directly in app)</li>
+            <li><strong>Right to Erasure:</strong> Delete all your data (Settings → Delete All Data)</li>
+            <li><strong>Right to Restriction:</strong> Limit processing (disable crash reporting)</li>
+            <li><strong>Right to Data Portability:</strong> Export data in CSV/JSON format (Premium feature)</li>
+            <li><strong>Right to Object:</strong> Opt-out of crash reporting anytime</li>
+        </ul>
+
+        <h3>5.2 CCPA Rights (California Users)</h3>
+        <p>Under the California Consumer Privacy Act (CCPA), you have the right to:</p>
+        <ul>
+            <li>Know what personal information we collect (see Section 1)</li>
+            <li>Delete personal information we hold (use in-app deletion)</li>
+            <li>Opt-out of sale of personal data (<strong>We don't sell your data. Ever.</strong>)</li>
+            <li>Non-discrimination for exercising your rights</li>
+        </ul>
+
+        <h3>5.3 How to Exercise Your Rights</h3>
+        <p>Since all data is stored locally on your device, you have <strong>full control</strong>:</p>
+        <ol>
+            <li><strong>Access your data:</strong> Open the app, view all logs, settings, and progress</li>
+            <li><strong>Export your data:</strong> Settings → Backup & Export → Export to CSV/JSON (Premium)</li>
+            <li><strong>Delete your data:</strong> Settings → Data Management → Delete All Data</li>
+            <li><strong>Opt-out of crash reports:</strong> Settings → Privacy → Crash Reporting → OFF</li>
+        </ol>
+        <p>For questions or assistance, contact us at <a href="mailto:privacy@sugarreset.app" class="email-link">privacy@sugarreset.app</a></p>
+
+        <h2 id="section-6"><span class="section-number">6</span>Children's Privacy</h2>
+
+        <h3>6.1 Age Restrictions</h3>
+        <p>SugarReset is designed for general audiences and does not knowingly collect personal information from children under 13 years of age.</p>
+        <p>Since we don't collect personal data at all, and the app is used offline without account creation, there's minimal privacy risk for younger users.</p>
+
+        <h3>6.2 Parental Consent</h3>
+        <p>If a parent or guardian becomes aware that their child has used SugarReset and wants to delete the data, simply uninstall the app from the child's device. All data will be permanently deleted.</p>
+
+        <h2 id="section-7"><span class="section-number">7</span>International Data Transfers</h2>
+
+        <h3>7.1 No Cross-Border Transfers of Health Data</h3>
+        <p>Your health data (logs, presets, progress) <strong>never leaves your device</strong>, so there are no international data transfers.</p>
+
+        <h3>7.2 Third-Party Services</h3>
+        <p>If you opt-in to crash reporting, anonymous technical data may be transferred to:</p>
+        <ul>
+            <li><strong>Sentry:</strong> United States (GDPR-compliant, Privacy Shield certified)</li>
+            <li><strong>RevenueCat:</strong> United States (for premium purchases)</li>
+        </ul>
+        <p>These services use standard contractual clauses and encryption to protect data in transit.</p>
+
+        <h2 id="section-8"><span class="section-number">8</span>Changes to This Policy</h2>
+
+        <h3>8.1 Update Notifications</h3>
+        <p>We may update this Privacy Policy from time to time. When we do:</p>
+        <ul>
+            <li>The "Last Updated" date at the top will change</li>
+            <li>Significant changes will be announced in the app (via a one-time notification)</li>
+            <li>The updated policy will be available at: <a href="https://sugarreset.app/privacy" class="email-link">https://sugarreset.app/privacy</a></li>
+        </ul>
+
+        <h3>8.2 Your Continued Use</h3>
+        <p>By continuing to use SugarReset after policy updates, you accept the new terms. If you disagree with changes, you can stop using the app and delete your data.</p>
+
+        <h3>8.3 Version History</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Version</th>
+                    <th>Date</th>
+                    <th>Changes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.0</td>
+                    <td>January 11, 2026</td>
+                    <td>Initial privacy policy for SugarReset launch</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="section-9"><span class="section-number">9</span>Contact Us</h2>
+
+        <div class="contact-box">
+            <h3>Questions About Your Privacy?</h3>
+            <p>We're here to help. Reach out anytime:</p>
+            <p style="margin-top: 20px;">
+                <strong>Email:</strong> <a href="mailto:privacy@sugarreset.app" class="email-link">privacy@sugarreset.app</a><br>
+                <strong>Support:</strong> <a href="mailto:support@sugarreset.app" class="email-link">support@sugarreset.app</a><br>
+                <strong>Website:</strong> <a href="https://sugarreset.app" class="email-link">https://sugarreset.app</a>
+            </p>
+            <p style="margin-top: 20px; font-size: 0.95em; color: var(--text-light);">
+                <strong>Response Time:</strong> We aim to respond to all privacy inquiries within 48 hours.
+            </p>
+        </div>
+
+        <h2>Summary (TL;DR)</h2>
+        <div class="highlight-box" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <h2 style="margin-top: 0;">The Bottom Line</h2>
+            <ul>
+                <li>Your health data stays on your phone. Period.</li>
+                <li>We can't see your logs, even if we wanted to.</li>
+                <li>No account = no email = no password = no data breach risk.</li>
+                <li>Crash reports are optional and anonymous.</li>
+                <li>We don't sell, share, or monetize your data.</li>
+                <li>You can export or delete everything anytime.</li>
+                <li>We use minimal third-party services (RevenueCat for purchases, optional Sentry for crashes).</li>
+            </ul>
+            <p style="margin-top: 20px; margin-bottom: 0;"><strong>Privacy isn't a feature. It's our foundation.</strong></p>
+        </div>
+
+        <footer>
+            <p><strong>SugarReset</strong> - Track. Reduce. Thrive.</p>
+            <p>Package ID: com.sugarreset.app</p>
+            <p style="margin-top: 20px;">
+                &copy; 2026 SugarReset. All rights reserved.<br>
+                <a href="https://sugarreset.app/terms" style="color: var(--text-light); margin: 0 10px;">Terms of Service</a> |
+                <a href="https://sugarreset.app/privacy" style="color: var(--text-light); margin: 0 10px;">Privacy Policy</a> |
+                <a href="mailto:support@sugarreset.app" style="color: var(--text-light); margin: 0 10px;">Contact</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
