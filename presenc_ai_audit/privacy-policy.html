@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Presenc AI Audit</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      color: #1a1a2e;
+      background: #fafafa;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 3rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .badge {
+      display: inline-block;
+      background: #e8f5e9;
+      color: #2e7d32;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.3rem;
+      color: #1a1a2e;
+    }
+    .updated {
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin-top: 2rem;
+      margin-bottom: 0.6rem;
+      color: #1a1a2e;
+    }
+    p {
+      margin-bottom: 1rem;
+      color: #444;
+    }
+    strong { color: #1a1a2e; }
+    ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+      color: #444;
+    }
+    li { margin-bottom: 0.4rem; }
+    code {
+      background: #f4f4f4;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    .highlight-box {
+      background: #f0f7ff;
+      border-left: 4px solid #1976d2;
+      padding: 1rem 1.2rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0;
+    }
+    .highlight-box p { margin: 0; color: #1a1a2e; }
+    .footer {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #eee;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    .footer a { color: #1976d2; text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">100% Local Analysis</div>
+    <h1>Presenc AI Audit — Privacy Policy</h1>
+    <p class="updated">Last Updated: March 2026</p>
+
+    <h2>1. No Data Collection</h2>
+    <p>
+      Presenc AI Audit is a <strong>100% local browser extension</strong>. All audits are performed
+      <strong>entirely within your browser</strong>. We do <strong>not</strong> collect, store, transmit,
+      or process any of your browsing data, page content, or personal information.
+    </p>
+
+    <h2>2. No Server Communication</h2>
+    <p>
+      The extension makes <strong>zero external API calls</strong>. All analysis — including scoring
+      across 27 AI readiness metrics — runs locally using JavaScript and browser APIs.
+    </p>
+    <div class="highlight-box">
+      <p><strong>Your data never leaves your device.</strong></p>
+    </div>
+
+    <h2>3. Local Storage Only</h2>
+    <p>
+      Audit results may be stored locally in your browser using <code>chrome.storage</code> or
+      <code>IndexedDB</code> to support features like:
+    </p>
+    <ul>
+      <li>Historical score tracking</li>
+      <li>Site-wide audit history</li>
+      <li>Impact simulator state</li>
+      <li>User preferences</li>
+    </ul>
+    <p>
+      This storage is <strong>client-side only</strong> and can be cleared at any time through your
+      browser settings or by uninstalling the extension.
+    </p>
+
+    <h2>4. Third-Party Libraries</h2>
+    <p>
+      The extension uses <strong>vanilla JavaScript with no external frameworks or third-party
+      libraries</strong>. All analysis logic is built in-house and runs entirely locally.
+    </p>
+
+    <h2>5. Permissions Used</h2>
+    <ul>
+      <li><strong>activeTab</strong> — To access and analyze the content of the page you are currently viewing</li>
+      <li><strong>storage</strong> — To save audit results and preferences locally in your browser</li>
+      <li><strong>sidePanel</strong> — To display the site-wide audit dashboard alongside your browsing</li>
+      <li><strong>host permissions</strong> — To allow auditing on any website you choose to analyze</li>
+    </ul>
+    <p>All permissions are used <strong>exclusively for local analysis</strong>. No data is transmitted externally.</p>
+
+    <h2>6. Contact</h2>
+    <p>
+      If you have questions about this privacy policy or the extension, reach out at
+      <a href="mailto:info@presenc.ai" style="color:#1976d2;">info@presenc.ai</a>
+    </p>
+
+    <div class="footer">
+      <p>Built by <a href="https://presenc.ai">Presenc AI</a></p>
+    </div>
+  </div>
+</body>
+</html>
