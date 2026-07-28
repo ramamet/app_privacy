@@ -3,106 +3,119 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HEA Privacy Policy</title>
+<title>Ellingham Privacy Policy</title>
 <style>
   :root { color-scheme: light dark; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.65; max-width: 720px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
-    color: #121619; background: #f3f5f6;
+    color: #16151f; background: #f2f2f7;
   }
   @media (prefers-color-scheme: dark) {
-    body { color: #dce2e4; background: #0d1113; }
-    a { color: #3fb0ba; }
+    body { color: #dcdbe6; background: #0e0d14; }
+    a { color: #8983f0; }
   }
   h1 { font-size: 1.7rem; margin-bottom: 0.25rem; }
   h2 { font-size: 1.15rem; margin-top: 2rem; }
-  .updated { color: #7c868a; font-size: 0.9rem; margin-top: 0; }
-  a { color: #0e7c86; }
+  .updated { color: #7c7a8a; font-size: 0.9rem; margin-top: 0; }
+  a { color: #4b45c6; }
   ul { padding-left: 1.25rem; }
   li { margin: 0.35rem 0; }
 </style>
 </head>
 <body>
-<h1>HEA Privacy Policy</h1>
-<p class="updated">Last updated: 26 July 2026</p>
+<h1>Ellingham Privacy Policy</h1>
+<p class="updated">Last updated: 28 July 2026</p>
 
-<p>HEA : High Entropy Alloys is an offline high-entropy-alloy design and
-phase-prediction tool. It computes configurational entropy, enthalpy of mixing,
-atomic-size difference, valence-electron concentration and the other classic
-design parameters from published correlations, entirely on your device. It has
-no account, no server, and no way to reach the internet. This policy explains,
-plainly, what that means.</p>
+<p>Ellingham is an offline interactive Ellingham diagram and reaction
+calculator. It computes standard enthalpy, entropy, Gibbs free energy and the
+equilibrium constant for oxide, carbon and hydrogen reactions from the
+NIST-JANAF Shomate coefficients, entirely on your device. It has no account and
+no server. This policy explains, plainly, what that means.</p>
 
 <h2>The short version</h2>
 <ul>
-  <li>HEA does not collect, store remotely, or transmit any personal data.</li>
+  <li>Ellingham does not collect, store remotely, or transmit any personal data.</li>
   <li>There is no account and no sign-up.</li>
   <li>There are no ads, no analytics, and no tracking of any kind.</li>
   <li>The app holds no internet permission. It cannot make a network call, even by accident.</li>
 </ul>
 
 <h2>What the app stores, and where</h2>
-<p>HEA stores exactly two things: whether you prefer atomic percent or molar
-ratio for composition, and whether you prefer kelvin or Celsius for
-temperature. Those two display preferences live in the app's private storage on
-your device so the app remembers them next time you open it. Nothing else is
+<p>Ellingham stores exactly one thing: whether you prefer kelvin or Celsius for
+temperature. That single display preference lives in the app's private storage
+on your device so the app remembers it next time you open it. Nothing else is
 written anywhere.</p>
 
-<p>The formula you type into the calculator and the alloys you look up in the
-literature evidence set are held in memory only while you are using the screen.
-They are not saved to disk, not kept in a history, and not sent anywhere. Close
-the app and they are gone.</p>
+<p>The temperature you set, the reactions you select, and the crossovers you
+look at are held in memory only while you are using the screen. They are not
+saved to disk, not kept in a history, and not sent anywhere. Close the app and
+they are gone.</p>
 
 <h2>No network access at all</h2>
 <p>Most apps that promise privacy still ship with the ability to reach the
-internet and simply choose not to use it. HEA does not have that ability. The
-release build declares no INTERNET permission, which means Android itself will
-refuse any network request the app might make. You can verify this on the app's
-Play Store listing, where the permissions section will show none, or with any
-APK inspection tool.</p>
+internet and simply choose not to use it. Ellingham does not have that ability.
+The release build declares no INTERNET permission, which means Android itself
+will refuse any network request the app might make. You can verify this on the
+app's Play Store listing, where the permissions section will show none, or with
+any APK inspection tool.</p>
 
-<p>The element property table, the binary mixing-enthalpy matrix, the
-literature evidence set, all equations, and all citations are bundled inside the
-app. Nothing is fetched, and there is nothing to fetch.</p>
+<p>Every Shomate coefficient, every species range, every equation and every
+citation is bundled inside the app. Nothing is fetched, and there is nothing to
+fetch.</p>
+
+<h2>The two links on the About screen</h2>
+<p>The About screen lists the two sibling apps in the MetKit suite, HeatTreat
+and HEA, and tapping one opens its Google Play listing. This is worth being
+precise about, because it is the only thing in the app that points outward.</p>
+
+<p>Tapping one of those rows hands a Play Store web address to Android, which
+opens it in the Play Store app or your browser. Ellingham itself makes no
+network request and could not make one; it passes the address along and takes no
+further part. The address contains only the sibling app's package name. It
+carries no identifier for you or your device, no referrer, and nothing about
+what you have done in the app. Ellingham is not told whether you went on to
+install anything, and receives no attribution, referral, or affiliate data of
+any kind. Once the Play Store or your browser opens, that app's own privacy
+policy governs what happens next.</p>
 
 <h2>What the app does not collect</h2>
-<p>HEA does not collect names, email addresses, contacts, location, photos,
-device identifiers, usage analytics, crash reports, or any other personal
-information. It does not know which alloys you looked at, what formula you
-entered, or that you opened it at all. There is no mechanism by which it could
-report any of this.</p>
+<p>Ellingham does not collect names, email addresses, contacts, location,
+photos, device identifiers, usage analytics, crash reports, or any other
+personal information. It does not know which reactions you looked at, what
+temperature you set, or that you opened it at all. There is no mechanism by
+which it could report any of this.</p>
 
 <h2>Permissions</h2>
-<p>HEA requests no runtime permissions. It does not ask for camera, photos,
-storage, microphone, location, contacts, or notifications. The only entry in its
-manifest is an Android system permission that the app defines for itself, which
-grants no access to your device or your data and is added automatically by the
-Android support libraries.</p>
+<p>Ellingham requests no runtime permissions. It does not ask for camera,
+photos, storage, microphone, location, contacts, or notifications. The only
+entry in its manifest is an Android system permission that the app defines for
+itself, which grants no access to your device or your data and is added
+automatically by the Android support libraries.</p>
 
 <h2>Estimates, not specifications</h2>
-<p>HEA gives estimates from published empirical correlations, and the phase
-rules it applies are screening rules rather than a phase diagram. It is not a
-certification tool and does not issue specifications. The correlations carry
-scatter, they were fitted on particular alloy families, and a rule that passes
-is not a guarantee that a single-phase solid solution will form. Every parameter
-in the app shows its equation, its source, and the limits of that source, and a
-parameter is withheld outright when the bundled data cannot support it. Confirm
-any candidate alloy experimentally before relying on it.</p>
+<p>Ellingham gives standard-state screening estimates for education and
+orientation. They assume pure condensed phases at unit activity and a total
+pressure of 1 bar, and they ignore solution behaviour, so they are not
+activity-corrected results and not a substitute for measured data. It is not a
+certification tool and does not issue specifications. Every quantity in the app
+shows its equation, its NIST source, and the temperature range that source
+covers, and a reaction is withheld outright, with the limiting species named,
+when the requested temperature falls outside that range. Confirm against the
+applicable data before relying on a number.</p>
 
 <h2>Bundled third-party data</h2>
-<p>The literature evidence set is derived from a published open dataset
-(Chizhevskiy et al., High Entropy Alloys Database generated with Large Language
-Model, Scientific Data 13:612, 2026; data at Mendeley 10.17632/j75v9bbbjz),
-used under the Creative Commons Attribution 4.0 licence and attributed in the
-app's About screen. It was extracted from published papers by a language model
-rather than curated by hand, so the app states its accuracy caveat wherever it
-is shown and links each record to its source DOI. It contains no personal data.
-Including it involves no data collection from you and no network access.</p>
+<p>The thermochemical data are the NIST-JANAF Thermochemical Tables (M. W.
+Chase Jr., NIST-JANAF Thermochemical Tables, Fourth Edition, Journal of Physical
+and Chemical Reference Data, Monograph 9, 1998), obtained through the NIST
+Chemistry WebBook. As a work of the United States Government these are in the
+public domain. Each species carries its WebBook identifier and its tabulated
+temperature range inside the app. They contain no personal data. Including them
+involves no data collection from you and no network access.</p>
 
 <h2>Children</h2>
-<p>HEA does not knowingly collect any data from anyone, including children.
-There is nothing to collect.</p>
+<p>Ellingham does not knowingly collect any data from anyone, including
+children. There is nothing to collect.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy ever changes, the updated version will be posted at this same
