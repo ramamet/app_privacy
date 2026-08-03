@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Ten Nails</title>
+    <!--
+      System fonts on purpose. The app is set in Outfit and Inter, but loading
+      those from a font CDN would make this page fetch a third-party resource
+      on the reader's behalf, which is the one thing it spends its whole length
+      promising the app does not do.
+    -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #635E57;
+            background-color: #F6F4EF;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #BA3B54;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+        }
+
+        .logo svg {
+            width: 80px;
+            height: 80px;
+        }
+
+        h1 {
+            color: #BA3B54;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #635E57;
+            font-size: 1.1rem;
+        }
+
+        .updated {
+            color: #8B857C;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .card {
+            background: #FEFCF8;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(42, 36, 28, 0.06);
+        }
+
+        h2 {
+            color: #BA3B54;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 .icon {
+            width: 28px;
+            height: 28px;
+            background: #F9E4E8;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #635E57;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #635E57;
+        }
+
+        strong {
+            color: #2A241C;
+        }
+
+        .highlight {
+            background: #F9E4E8;
+            border-left: 4px solid #BA3B54;
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+
+        .highlight p {
+            margin: 0;
+            color: #2A241C;
+            font-weight: 500;
+        }
+
+        .permissions-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        .permissions-table th,
+        .permissions-table td {
+            text-align: left;
+            padding: 12px 15px;
+            border-bottom: 1px solid #EDE9E0;
+        }
+
+        .permissions-table th {
+            background: #F6F4EF;
+            color: #2A241C;
+            font-weight: 600;
+        }
+
+        .permissions-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .badge-required {
+            background: #F9E4E8;
+            color: #8E2C40;
+        }
+
+        .badge-optional {
+            background: #E2F1EB;
+            color: #1F6B54;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #8B857C;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #BA3B54;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .card a {
+            color: #BA3B54;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .permissions-table th,
+            .permissions-table td {
+                padding: 10px 8px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!-- Ten Nails mark: a fingertip on the brand wash -->
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="32" cy="32" r="30" fill="#F9E4E8"/>
+                    <path d="M32 13c-8 0-13 6-13 14v14c0 6 5 10 13 10s13-4 13-10V27c0-8-5-14-13-14z" fill="#F2C4A2"/>
+                    <path d="M32 19c-4.5 0-7.5 3-7.5 7.5v8c0 3.5 3 5.5 7.5 5.5s7.5-2 7.5-5.5v-8C39.5 22 36.5 19 32 19z" fill="#FDF3EC"/>
+                </svg>
+            </div>
+            <h1>Ten Nails Privacy Policy</h1>
+            <p class="subtitle">A nail growth and care tracker</p>
+            <p class="updated">Last updated: 3 August 2026</p>
+        </header>
+
+        <div class="card">
+            <h2><span class="icon">🔒</span> Our Commitment</h2>
+            <p>Ten Nails is built to work without knowing anything about you. There is no account to create, no server to send your record to, and no company on the other end reading it.</p>
+            <div class="highlight">
+                <p>We do not collect, store, or transmit any of your data. Everything you record stays on your phone.</p>
+            </div>
+            <p>That is not a policy we chose to write kindly. It is how the app is built: there is no code in Ten Nails that sends your record anywhere, because there is nowhere for it to go.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">📊</span> Data Collection</h2>
+            <p>Ten Nails collects <strong>nothing</strong>. To be specific, we do not gather:</p>
+            <ul>
+                <li>Your name, email address, phone number, or any account details</li>
+                <li>Your progress photos</li>
+                <li>Daily check-ins, slips, urges, triggers, or notes</li>
+                <li>Your reason for quitting, which the app asks for so it can hand it back to you when things are hard</li>
+                <li>Your care routine, or which tasks you have ticked off</li>
+                <li>Your location</li>
+                <li>Device identifiers, advertising IDs, or usage analytics</li>
+                <li>Crash reports or diagnostics</li>
+            </ul>
+            <p>There are no analytics tools, no advertising networks, and no third-party trackers in the app.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">📷</span> Your Photos</h2>
+            <p>Progress photos are the heart of the app, and they are the most personal thing it holds.</p>
+            <ul>
+                <li>Photos are saved to a private folder that belongs to this app alone. No other app on your phone can read them, and they never appear in your shared photo library or gallery.</li>
+                <li>They are never uploaded, and there is no cloud copy.</li>
+                <li><strong>They are never analysed.</strong> Ten Nails does not look at your photos, measure them, or work anything out from them. The growth figure comes from the calendar, not from the pictures: it is elapsed time multiplied by an average growth rate, and the photographs sit beside that number as your own evidence rather than as its source.</li>
+                <li>Photos leave your phone only when you choose to send them, through your phone's usual share options.</li>
+            </ul>
+            <p>Ten Nails asks for no camera permission and no photo library permission. Pictures come through your phone's own camera app, which hands back only the single image you just took.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">💾</span> Data Storage</h2>
+            <p>Everything lives in app-private storage on your device: your photos, check-ins, slips, urges, trims, care tasks and their history, the awards you have earned, and your settings.</p>
+            <p>Android's automatic cloud backup is <strong>switched off</strong> for this app, so your record is not copied to your Google Drive and does not travel in a device-to-device transfer. That is a deliberate choice. A backup that silently uploaded your photographs would make the promise on this page untrue.</p>
+            <p>One consequence worth knowing: because there is no cloud copy, a new phone starts empty. Use the export before you switch.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">📱</span> Permissions</h2>
+            <table class="permissions-table">
+                <thead>
+                    <tr><th>Permission</th><th>Why</th><th>Status</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Notifications</td><td>The daily reminder and milestone notes, if you turn them on</td><td><span class="badge badge-optional">Optional</span></td></tr>
+                    <tr><td>Run after restart</td><td>So a reminder you set survives a reboot</td><td><span class="badge badge-required">Silent</span></td></tr>
+                    <tr><td>Vibrate</td><td>Haptic feedback when you tap something</td><td><span class="badge badge-required">Silent</span></td></tr>
+                    <tr><td>Internet and network state</td><td>Google Play Billing only, for the optional purchase</td><td><span class="badge badge-required">Silent</span></td></tr>
+                    <tr><td>Billing</td><td>The optional one-time purchase</td><td><span class="badge badge-required">Silent</span></td></tr>
+                </tbody>
+            </table>
+            <p>Ten Nails does <strong>not</strong> request camera, photos or media, storage, microphone, location, contacts, or body sensors.</p>
+            <div class="highlight">
+                <p>About the internet permission: the app's own code makes no network requests. That permission is added automatically by Google Play's billing library so the optional purchase can be processed. Nothing about you is sent over it.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">🩺</span> Not Medical Advice</h2>
+            <p>Ten Nails is a record you keep. It is not a medical device and it diagnoses nothing.</p>
+            <p>The growth figure is an estimate drawn from the calendar, using an average rate of nail growth. It is not a measurement of your nails, and it will not match a ruler.</p>
+            <p>The habit module, if you turn it on, is a self-tracking tool and nothing more. Nail biting and skin picking are body-focused repetitive behaviours, and if yours is causing you distress or hurting your hands, a doctor or a therapist can help in ways that an app cannot.</p>
+            <p>Nails also change for medical reasons. If something about yours worries you, please see a professional rather than waiting for a countdown to finish.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">💳</span> Purchases</h2>
+            <p>Ten Nails is free to download and use. There is one optional purchase, Ten Nails Plus, which is a single payment rather than a subscription.</p>
+            <p>Payment is handled entirely by Google Play. We never see or store your card details, billing address, or any part of the transaction. All the app keeps is a single yes-or-no flag on your device recording that the unlock is active.</p>
+            <p>Google Play's own privacy policy covers the payment itself.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">📄</span> Export</h2>
+            <p>Plus includes an export: a JSON file holding everything the app has recorded, photo file names included, though not the image files themselves.</p>
+            <p>The file is generated on your phone. Nothing is uploaded to make it. Where it goes afterwards is entirely your choice, through your phone's usual share options, and at that point it is covered by whatever app you send it to.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">🗑️</span> Data Deletion</h2>
+            <p>Your data is yours and it is on your device, so removing it is straightforward:</p>
+            <ul>
+                <li>Delete any photo from the photo viewer, which removes both the file and its entry</li>
+                <li>Clear or change a day's answer from that day in the calendar</li>
+                <li>Turn a module off in Settings to hide everything belonging to it, without deleting the history underneath</li>
+                <li>Uninstall the app to remove all of it at once, photos included</li>
+            </ul>
+            <p>There is nothing to request from us, because we hold nothing. One thing worth naming: your Plus purchase is recorded by Google Play rather than by us, so uninstalling does not cost you what you paid for. Restore it from the paywall on a fresh install.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">👶</span> Children's Privacy</h2>
+            <p>Ten Nails is intended for adults and older teenagers looking after their own nails. It collects no data from anyone, of any age. We do not knowingly collect personal information from children, because we do not collect personal information at all.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+            <p>If this policy changes, the updated version will appear here with a new date, and a material change will be noted in the app's release notes.</p>
+            <p>If Ten Nails ever gained a feature that sent data anywhere, that would be described here plainly and before the feature shipped, not after.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">📧</span> Contact Us</h2>
+            <p>Questions about this policy, or about the app:</p>
+            <ul>
+                <li>Email: <a href="mailto:contact@futigo.io">contact@futigo.io</a></li>
+                <li>Website: <a href="https://futigo.io">futigo.io</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Ten Nails is made by <a href="https://futigo.io">Futigo</a>.</p>
+            <p>Everything lives on this phone.</p>
+        </footer>
+    </div>
+</body>
+</html>
