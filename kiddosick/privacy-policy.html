@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - KiddoSick</title>
+    <!--
+      System fonts on purpose. The app is set in Baloo 2 and Varela Round, but
+      loading those from a font CDN would make this page fetch a third-party
+      resource on the reader's behalf, which is the one thing it spends its
+      whole length promising the app does not do.
+    -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #5C463B;
+            background-color: #FDF9F3;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #2E6A87;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+        }
+
+        .logo svg {
+            width: 80px;
+            height: 80px;
+        }
+
+        h1 {
+            color: #2E6A87;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #5C463B;
+            font-size: 1.1rem;
+        }
+
+        .updated {
+            color: #8A7265;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .card {
+            background: #FFFFFF;
+            border: 1px solid #EADFD3;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            font-size: 1.6rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            color: #33211A;
+            font-size: 1.3rem;
+            margin-bottom: 14px;
+        }
+
+        h3 {
+            color: #33211A;
+            font-size: 1.05rem;
+            margin: 20px 0 8px;
+        }
+
+        p {
+            margin-bottom: 14px;
+        }
+
+        ul {
+            margin: 0 0 14px 22px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        strong {
+            color: #33211A;
+        }
+
+        a {
+            color: #2E6A87;
+        }
+
+        .highlight {
+            background: #EAF2F6;
+            border-left: 4px solid #2E6A87;
+            border-radius: 8px;
+            padding: 16px 18px;
+            margin: 18px 0;
+        }
+
+        /* Red is reserved for danger in the app; it means the same here. */
+        .alert {
+            background: #FBEDEA;
+            border-left: 4px solid #C0392B;
+            border-radius: 8px;
+            padding: 16px 18px;
+            margin: 18px 0;
+        }
+
+        .permissions-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .permissions-table th,
+        .permissions-table td {
+            text-align: left;
+            padding: 10px 8px;
+            border-bottom: 1px solid #EADFD3;
+            vertical-align: top;
+        }
+
+        .permissions-table th {
+            color: #33211A;
+            font-size: 0.9rem;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 0.78rem;
+            padding: 3px 10px;
+            border-radius: 999px;
+            white-space: nowrap;
+        }
+
+        .badge-optional {
+            background: #EAF2F6;
+            color: #2E6A87;
+        }
+
+        .badge-required {
+            background: #F1EBE4;
+            color: #5C463B;
+        }
+
+        footer {
+            text-align: center;
+            color: #8A7265;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #EADFD3;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.6rem; }
+            .card { padding: 20px; }
+            .container { padding: 24px 16px; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <div class="logo">
+            <!-- The crescent from the app's navigation bar, drawn inline so
+                 this page fetches nothing. -->
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M50 8a42 42 0 1 0 0 84 42 42 0 0 1 0-84z" fill="#2E6A87"/>
+            </svg>
+        </div>
+        <h1>KiddoSick Privacy Policy</h1>
+        <p class="subtitle">A fever log and medicine timer for children</p>
+        <p class="updated">Last updated: 5 August 2026</p>
+    </header>
+
+    <div class="card">
+        <span class="icon">🔒</span>
+        <h2>Our Commitment</h2>
+        <p>KiddoSick is built to work without knowing anything about you or your
+            child. There is no account to create, no server to send the record
+            to, and no company on the other end reading it.</p>
+        <p><strong>We do not collect, store, or transmit any of your data.</strong>
+            Everything you record stays on your phone.</p>
+        <p>That is not a policy we chose to write kindly. It is how the app is
+            built: there is no code in KiddoSick that sends your child's record
+            anywhere, because there is nowhere for it to go.</p>
+    </div>
+
+    <div class="card">
+        <span class="icon">📊</span>
+        <h2>Data Collection</h2>
+        <p>KiddoSick collects <strong>nothing</strong>. To be specific, we do not
+            gather:</p>
+        <ul>
+            <li>Your name, email address, phone number, or any account details</li>
+            <li>Your child's name, birthday, sex, weight, height, or blood group</li>
+            <li>Temperatures, medicines, doses, symptoms, notes, or illness episodes</li>
+            <li>Allergies or medical notes</li>
+            <li>Your child's photograph</li>
+            <li>Your location</li>
+            <li>Device identifiers, advertising IDs, or usage analytics</li>
+            <li>Crash reports or diagnostics</li>
+        </ul>
+        <p>There are no analytics tools, no advertising networks, and no
+            third-party trackers in the app.</p>
+    </div>
+
+    <div class="card">
+        <span class="icon">🩹</span>
+        <h2>Your Child's Record</h2>
+        <p>What you log is health information about a child, which is about as
+            sensitive as data gets. It is treated accordingly.</p>
+        <p>Everything lives in app-private storage on your device: temperatures
+            with the unit and the site you measured at, medicines and the
+            intervals you entered, doses, symptoms, free-text notes, illness
+            episodes, and each child's profile.</p>
+        <p>None of it is analysed by us, because none of it reaches us. The
+            countdowns, the fever-free clock, the recurring-pattern strip and
+            every alert are worked out on your phone, from your own entries,
+            while the app is running in front of you.</p>
+    </div>
+
+    <div class="card">
+        <span class="icon">☁️</span>
+        <h2>Google Backup</h2>
+        <p>Android's automatic cloud backup is <strong>switched on</strong> for
+            this app. This is the one part of the page worth reading slowly,
+            because it is a deliberate choice and the opposite of what several
+            privacy-first apps do.</p>
+        <div class="highlight">
+            <p style="margin-bottom:0"><strong>What that means:</strong> a copy of
+                the app's data can be stored in <em>your own</em> Google account,
+                by Android, and restored when you set up a new phone. It is
+                end-to-end encrypted with a key derived from your device PIN,
+                pattern or password. Google states it cannot read it, and
+                <strong>we never see it at all</strong> — there is no developer
+                access to Android Auto Backup and no copy reaches us.</p>
+        </div>
+        <p>The reason is the record itself. This app is offline and accountless,
+            so without a backup a lost or broken phone means the whole illness
+            history is gone. For a family tracking a fever that comes back every
+            few weeks, that can be months of the evidence a doctor asked them to
+            collect. Losing that to a dropped phone is a worse outcome than the
+            backup, so the backup is on.</p>
+        <p><strong>You can turn it off.</strong> It is your Google account, not
+            ours: <em>Settings &rarr; Google &rarr; Backup</em> on most phones, either
+            for everything or for KiddoSick alone. Nothing in the app depends on
+            it, and the free export below is there either way.</p>
+        <p>Because this is your own OS-level backup rather than anything we
+            collect, our Data safety declaration on Google Play remains
+            <strong>"No data collected"</strong>. We think saying so without
+            explaining it would be technically true and practically misleading,
+            which is why this section exists.</p>
+    </div>
+
+    <div class="card">
+        <span class="icon">📷</span>
+        <h2>Photographs</h2>
+        <p>You can give each child a picture. It is entirely optional, and the
+            bundled illustrations are there so you never have to put a photograph
+            of a child into an app at all.</p>
+        <p>If you do choose one, it is copied into a private folder belonging to
+            this app alone, resized down as it arrives, and never uploaded. No
+            other app on your phone can read it. It does not appear in your shared
+            photo library.</p>
+        <p><strong>KiddoSick asks for no camera permission and no photo library
+            permission.</strong> Pictures come through your phone's own photo
+            picker, which hands back only the single image you chose and shows us
+            nothing else.</p>
+    </div>
+
+    <div class="card">
+        <span class="icon">📱</span>
+        <h2>Permissions</h2>
+        <table class="permissions-table">
+            <thead>
+            <tr>
+                <th>Permission</th>
+                <th>Why</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Notifications</td>
+                <td>The dose countdown in your notification shade, if you allow it</td>
+                <td><span class="badge badge-optional">Optional</span></td>
+            </tr>
+            <tr>
+                <td>Run after restart</td>
+                <td>So a countdown you set survives a reboot</td>
+                <td><span class="badge badge-required">Silent</span></td>
+            </tr>
+            <tr>
+                <td>Vibrate</td>
+                <td>Haptic feedback when you tap something</td>
+                <td><span class="badge badge-required">Silent</span></td>
+            </tr>
+            <tr>
+                <td>Internet and network state</td>
+                <td>Google Play Billing only, for the optional purchase</td>
+                <td><span class="badge badge-required">Silent</span></td>
+            </tr>
+            <tr>
+                <td>Billing</td>
+                <td>The optional one-time purchase</td>
+                <td><span class="badge badge-required">Silent</span></td>
+            </tr>
+            </tbody>
+        </table>
+        <p style="margin-top:16px">KiddoSick does <strong>not</strong> request
+            camera, photos or media, storage, microphone, location, contacts, or
+            body sensors.</p>
+        <p>About the internet permission: the app's own code makes no network
+            requests. That permission is added automatically by Google Play's
+            billing library so the optional purchase can be processed. Nothing
+            about you or your child is sent over it.</p>
+    </div>
+
+    <div class="card">
+        <span class="icon">🩺</span>
+        <h2>Not a Medical Device</h2>
+        <div class="alert">
+            <p style="margin-bottom:0">KiddoSick is not a medical device and does
+                not diagnose, treat, cure, or prevent any medical condition.
+                Always consult a healthcare professional about your child's
+                health. <strong>If you are worried about your child right now,
+                    contact your doctor or your local emergency number rather than
+                    an app.</strong></p>
+        </div>
+        <p>KiddoSick is a record you keep and a timer that runs on numbers you
+            entered. It is not a calculator.</p>
+        <p><strong>The app never works out a dose.</strong> It does not know how
+            much medicine to give and it will never suggest an amount. Every
+            interval and daily maximum it counts down is one you typed in from
+            your own package or your own doctor, and the app's job is to remember
+            when you gave the last one so you do not have to at three in the
+            morning. Weight and height are recorded because a clinician asks for
+            them; nothing in the app calculates anything from either.</p>
+        <p>Where the app shows guidance — a fever in a very young baby, a rash
+            that does not fade, trouble breathing — it tells you what to do and
+            cites where the advice comes from. It never tells you what your child
+            has. That is a doctor's job, and the app is written not to get in
+            the way of it.</p>
+    </div>
+
+    <div class="card">
+        <span class="icon">💳</span>
+        <h2>Purchases</h2>
+        <p>KiddoSick is free to download and use. There is one optional purchase,
+            a single payment rather than a subscription.</p>
+        <p>Payment is handled entirely by Google Play. We never see or store your
+            card details, billing address, or any part of the transaction. All the
+            app keeps is a single yes-or-no flag on your device recording that the
+            unlock is active.</p>
+        <p><strong>Nothing about your child's safety is behind that payment.</strong>
+            Logging, the dose timer, the countdown notification, every alert, the
+            fever-free clock, the handoff card and the full export are free and
+            stay free.</p>
+        <p>Google Play's own privacy policy covers the payment itself.</p>
+    </div>
+
+    <div class="card">
+        <span class="icon">📄</span>
+        <h2>Export and Import</h2>
+        <p>Export is free, and it covers everything the app has recorded — every
+            child, every reading, every dose, every symptom and note — as a single
+            JSON file.</p>
+        <p>The file is generated on your phone. Nothing is uploaded to make it.
+            Where it goes afterwards is entirely your choice, through your phone's
+            usual share options, and at that point it is covered by whatever app
+            you send it to.</p>
+        <p>Import reads a file you choose and merges it into the record on this
+            phone. It is how a second parent's phone catches up, and it is also
+            your way out of the app entirely: your data is never held hostage.</p>
+    </div>
+
+    <div class="card">
+        <span class="icon">🗑️</span>
+        <h2>Data Deletion</h2>
+        <p>Your data is yours and it is on your device, so removing it is
+            straightforward:</p>
+        <ul>
+            <li>Delete a child's profile from their own screen, which removes every
+                reading, dose, symptom and illness recorded for them</li>
+            <li>Remove a medicine you no longer use, from that medicine's screen</li>
+            <li>Use <em>Delete all data</em> in Settings to clear the whole record
+                at once</li>
+            <li>Uninstall the app to remove all of it</li>
+        </ul>
+        <p>There is nothing to request from us, because we hold nothing.</p>
+        <p>Two things worth naming. If Android's backup is on, deleting data on the
+            phone does not by itself remove a copy already in your Google account;
+            manage that from <em>Settings &rarr; Google &rarr; Backup</em>. And your
+            purchase is recorded by Google Play rather than by us, so uninstalling
+            does not cost you what you paid for — restore it from the paywall on a
+            fresh install.</p>
+    </div>
+
+    <div class="card">
+        <span class="icon">👶</span>
+        <h2>Children's Privacy</h2>
+        <p>KiddoSick is for a parent or carer to use about a child. The app is not
+            designed or marketed for children to use themselves.</p>
+        <p>It collects no data from anyone, of any age. We do not knowingly collect
+            personal information from children, because we do not collect personal
+            information at all. Everything a parent records about their child stays
+            on that parent's phone.</p>
+    </div>
+
+    <div class="card">
+        <span class="icon">🔄</span>
+        <h2>Changes to This Policy</h2>
+        <p>If this policy changes, the updated version will appear here with a new
+            date, and a material change will be noted in the app's release notes.</p>
+        <p>If KiddoSick ever gained a feature that sent data anywhere, that would be
+            described here plainly and before the feature shipped, not after.</p>
+    </div>
+
+    <div class="card">
+        <span class="icon">📧</span>
+        <h2>Contact Us</h2>
+        <p>Questions about this policy, or about the app:</p>
+        <p>Email: <a href="mailto:contact@futigo.io">contact@futigo.io</a><br>
+            Website: <a href="https://futigo.io">futigo.io</a></p>
+    </div>
+
+    <footer>
+        <p>KiddoSick is made by <a href="https://futigo.io">Futigo</a>.</p>
+        <p>Your child's record stays on your phone.</p>
+    </footer>
+
+</div>
+</body>
+</html>
