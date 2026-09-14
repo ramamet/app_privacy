@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Strike Lab</title>
+    <!--
+      System fonts on purpose, as in the Futigo reference policy: loading a
+      web font from a CDN would make this page fetch a third-party resource
+      on the reader's behalf.
+
+      BEFORE PUBLISHING: the "Consent" paragraph in the Advertising section
+      describes Google's User Messaging Platform flow. The app code for it
+      is built; the GDPR message must also be published in AdMob, Privacy
+      and messaging, or no one is asked (see docs/ADMOB.md). Confirm the
+      contact details and the auto-backup paragraph against the release
+      build.
+    -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #5F5F67;
+            background-color: #F2F2F5;
+        }
+
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #0F2651;
+        }
+
+        .logo { width: 80px; height: 80px; margin: 0 auto 20px; }
+        .logo svg { width: 80px; height: 80px; }
+
+        h1 { color: #0F2651; font-size: 2rem; margin-bottom: 10px; }
+        .subtitle { color: #5F5F67; font-size: 1.1rem; }
+        .updated { color: #8A8A92; font-size: 0.9rem; margin-top: 10px; }
+
+        .card {
+            background: #FFFFFF;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 20px;
+            border: 0.5px solid #DCDCE1;
+        }
+
+        h2 {
+            color: #0F2651;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        p { margin-bottom: 15px; color: #5F5F67; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; color: #5F5F67; }
+        strong { color: #111114; }
+
+        .highlight {
+            background: #EEF2FC;
+            border-left: 4px solid #2457D6;
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .highlight p { margin: 0; color: #111114; font-weight: 500; }
+
+        .table-wrap { overflow-x: auto; }
+
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td {
+            text-align: left;
+            padding: 12px 15px;
+            border-bottom: 1px solid #E9E9EE;
+            vertical-align: top;
+        }
+        th { background: #F2F2F5; color: #111114; font-weight: 600; }
+        tr:last-child td { border-bottom: none; }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        .badge-free { background: #FFE4E0; color: #8E2A23; }
+        .badge-silent { background: #E6E6EB; color: #3A3A40; }
+
+        a { color: #2457D6; }
+        footer { text-align: center; padding: 30px 20px; color: #8A8A92; font-size: 0.9rem; }
+        footer a { text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 600px) {
+            .container { padding: 20px 16px; }
+            h1 { font-size: 1.6rem; }
+            .card { padding: 20px; }
+            th, td { padding: 10px 8px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!-- Strike Lab mark: a payoff line through its breakeven -->
+                <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect width="1024" height="1024" rx="236" ry="236" fill="#0F2651"/>
+                    <path d="M212 512 H812" fill="none" stroke="#2C4A80" stroke-width="18" stroke-linecap="round"/>
+                    <path d="M272 622 H422 L602 402 H752" fill="none" stroke="#FFFFFF" stroke-width="64" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="4"/>
+                    <circle cx="512" cy="512" r="41" fill="#6E9BFF" stroke="#0F2651" stroke-width="14"/>
+                </svg>
+            </div>
+            <h1>Strike Lab Privacy Policy</h1>
+            <p class="subtitle">An offline laboratory for Indian options strategies</p>
+            <p class="updated">Last updated: 14 September 2026</p>
+        </header>
+
+        <div class="card">
+            <h2>In short</h2>
+            <p>Strike Lab has no account, no server, and no copy of anything you build. The positions you create, the numbers you type and the strategies you open stay on your phone.</p>
+            <div class="highlight">
+                <p>The only data that leaves the device is what Google's advertising SDK collects to show ads in the free version. Strike Lab Pro removes the ads, and with them that data.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>What the app itself does not collect</h2>
+            <p>The app's own code makes no network requests. We do not collect, receive or store:</p>
+            <ul>
+                <li>Your name, email address, phone number, or any account details</li>
+                <li>The positions you build, the strikes, premiums or lots you enter, or the strategies you open</li>
+                <li>Anything about your real trades, holdings, broker or bank</li>
+                <li>Your precise location, contacts, photos, files or messages</li>
+                <li>Usage analytics or crash reports of our own</li>
+            </ul>
+            <p>There is no analytics tool of ours in the app, and no market data is fetched. Every number in Strike Lab is illustrative, entered by you or taken from a built-in preset.</p>
+        </div>
+
+        <div class="card">
+            <h2>Advertising in the free version</h2>
+            <p>The free version shows full-screen ads between pages, served by <strong>Google AdMob</strong> through the Google Mobile Ads SDK. Ads never appear inside the simulator itself, on the welcome screens, on the STT module, or on the page about what happens to most traders, and never while your finger is on a control.</p>
+            <p>To serve and measure ads and to prevent fraud, the Google Mobile Ads SDK collects and sends to Google:</p>
+            <ul>
+                <li><strong>Device identifiers:</strong> your Android advertising ID and app set ID</li>
+                <li><strong>Approximate location</strong>, derived from your IP address</li>
+                <li><strong>Ad interactions:</strong> for example which ads were shown and whether they were tapped, and app launches</li>
+                <li><strong>Diagnostics:</strong> crash logs and performance information about the ads SDK</li>
+            </ul>
+            <p>This data goes to Google, not to us, and is handled under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. You can read how Google uses information from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+            <p><strong>Consent.</strong> Where the law requires it, including in the European Economic Area, the United Kingdom and Switzerland, the app asks for your consent before personalised ads are shown, using Google's consent message. You can change your choice later from Settings.</p>
+            <p><strong>Your controls.</strong> You can reset or delete your advertising ID at any time in your phone's settings, under Google, then Ads. Deleting it stops personalised ads based on that ID across apps.</p>
+            <p>We ask AdMob not to show ads from the finance category, so the app does not serve trading tips between its pages.</p>
+        </div>
+
+        <div class="card">
+            <h2>What is stored on your phone</h2>
+            <p>A handful of small settings are saved in the app's private storage so the app remembers them:</p>
+            <ul>
+                <li>Your appearance, colour-blind palette, language, default contract and interest rate</li>
+                <li>Whether you have seen the welcome screens and first-use hints</li>
+                <li>A count of how many times the app has been opened, used only so the first session never shows an ad</li>
+                <li>A yes-or-no flag recording that Pro is unlocked</li>
+            </ul>
+            <p>Positions are not saved. Closing the app clears them.</p>
+            <p>Android's automatic backup is not switched off for Strike Lab, so if device backup is on in your phone's settings, Android may copy these settings to your own Google account. They contain nothing about any position or trade.</p>
+        </div>
+
+        <div class="card">
+            <h2>Permissions</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Permission</th><th>Why</th><th>Status</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Internet and network state</td><td>Loading ads in the free version, and Google Play Billing for the Pro purchase</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Advertising ID and ad services</td><td>Used by the Google Mobile Ads SDK in the free version</td><td><span class="badge badge-free">Free version</span></td></tr>
+                        <tr><td>Billing</td><td>The optional one-time Pro purchase</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Wake lock and foreground service</td><td>Added by Google's libraries for background tasks of their own</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Strike Lab asks for <strong>no</strong> runtime permissions. It does not request camera, microphone, location, contacts, storage, photos, phone or SMS access.</p>
+        </div>
+
+        <div class="card">
+            <h2>Not investment advice</h2>
+            <p>Strike Lab is an educational tool. It is not a trading app, a broker, or an advisor, and it is not registered with SEBI in any capacity.</p>
+            <p>Every price, premium and payoff in the app is illustrative. Nothing in Strike Lab is a recommendation to buy or sell any security or derivative, and nothing in it is a forecast. The figures on trader outcomes are drawn from SEBI's own published studies and are cited as such.</p>
+            <p>Options are risky, and most individual traders in this segment lose money. Please consult a SEBI-registered investment adviser before making financial decisions.</p>
+        </div>
+
+        <div class="card">
+            <h2>Purchases</h2>
+            <p>Strike Lab is free to download. Strike Lab Pro is one optional payment, not a subscription. It removes the ads, opens the full strategy library and adds side-by-side comparison.</p>
+            <p>Payment is handled entirely by Google Play. We never see your card details, UPI details, billing address or any part of the transaction. The app keeps only the yes-or-no flag above.</p>
+            <p>Google Play's privacy policy covers the payment itself.</p>
+        </div>
+
+        <div class="card">
+            <h2>Deleting your data</h2>
+            <ul>
+                <li>Uninstall the app to remove every setting it stored</li>
+                <li>Reset or delete your advertising ID in your phone's Google settings to break the link with past ad data</li>
+                <li>Buy Pro to stop the ads SDK collecting anything from then on</li>
+            </ul>
+            <p>There is nothing to request from us, because we hold nothing. Your Pro purchase is recorded by Google Play, so reinstalling does not lose it: use Restore purchase in Settings.</p>
+        </div>
+
+        <div class="card">
+            <h2>Children</h2>
+            <p>Strike Lab is intended for adults. Options are adult financial products, and the app is not directed at children. We do not knowingly collect personal information from anyone under 18, and the app itself collects no personal information from anyone.</p>
+        </div>
+
+        <div class="card">
+            <h2>Changes to this policy</h2>
+            <p>If this policy changes, the updated version will appear here with a new date, and a material change will be noted in the app's release notes.</p>
+            <p>If Strike Lab ever gained a feature that sent more data anywhere, it would be described here plainly before the feature shipped.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Questions about this policy or the app:</p>
+            <ul>
+                <li>Email: <a href="mailto:contact@futigo.io">contact@futigo.io</a></li>
+                <li>Website: <a href="https://futigo.io">futigo.io</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Strike Lab is made by <a href="https://futigo.io">Futigo</a>.</p>
+            <p>Illustrative numbers only. Nothing here is a recommendation.</p>
+        </footer>
+    </div>
+</body>
+</html>
