@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Dailoo</title>
+    <!--
+      System fonts on purpose, as in the Futigo reference policy: a web font
+      from a CDN would make this page fetch a third-party resource on the
+      reader's behalf.
+
+      BEFORE PUBLISHING: the "Consent" paragraph describes Google's User
+      Messaging Platform flow, which is built into the app; the GDPR message
+      must also be published in AdMob (Privacy and messaging) or no one is
+      asked. Confirm the contact details. Keep in step with the release
+      build's permissions (tool/check_release_permissions.sh) and the ad
+      rules in lib/features/ads/ad_constants.dart.
+    -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6; color: #57504A; background-color: #FAF7F2;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid #0E7C7B; }
+        .logo { width: 88px; height: 88px; margin: 0 auto 20px; }
+        .logo svg { width: 88px; height: 88px; }
+        h1 { color: #2A2522; font-size: 2rem; margin-bottom: 10px; }
+        h1 .brand { color: #0A5F5E; }
+        .subtitle { color: #57504A; font-size: 1.1rem; }
+        .updated { color: #6B625A; font-size: 0.9rem; margin-top: 10px; }
+        .card { background: #FFFFFF; border-radius: 16px; padding: 30px; margin-bottom: 20px; border: 1px solid #ECE4DA; }
+        h2 { color: #2A2522; font-size: 1.3rem; margin-bottom: 15px; }
+        p { margin-bottom: 15px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+        strong { color: #2A2522; }
+        .highlight { background: #FEF2E3; border-left: 4px solid #0E7C7B; padding: 15px 20px; border-radius: 0 8px 8px 0; margin: 20px 0; }
+        .highlight p { margin: 0; color: #2A2522; font-weight: 500; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { text-align: left; padding: 12px 15px; border-bottom: 1px solid #ECE4DA; vertical-align: top; }
+        th { background: #F4EFE7; color: #2A2522; font-weight: 600; }
+        tr:last-child td { border-bottom: none; }
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; white-space: nowrap; }
+        .badge-free { background: #FEF2E3; color: #8A4B12; }
+        .badge-ask { background: #ECF6F3; color: #0A5F5E; }
+        .badge-silent { background: #F4EFE7; color: #57504A; }
+        a { color: #0A5F5E; }
+        footer { text-align: center; padding: 30px 20px; color: #6B625A; font-size: 0.9rem; }
+        footer a { text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            .container { padding: 20px 16px; }
+            h1 { font-size: 1.6rem; }
+            .card { padding: 20px; }
+            th, td { padding: 10px 8px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!-- Dailoo mark: the doorstep at sunrise (logo/generate.py) -->
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<defs><linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD99A"/><stop offset="1" stop-color="#F4935F"/></linearGradient><clipPath id="tileclip"><rect width="100" height="100" rx="22.37"/></clipPath></defs><rect width="100" height="100" rx="22.37" fill="url(#tile)"/><rect y="83" width="100" height="17" fill="#E2774A" clip-path="url(#tileclip)"/><path fill="#FFF4DA" d="M84.10,25.70 L84.05,24.62 L83.89,23.55 L83.63,22.51 L83.26,21.49 L82.80,20.51 L82.25,19.59 L81.60,18.72 L80.88,17.92 L80.08,17.20 L79.21,16.55 L78.29,16.00 L77.31,15.54 L76.29,15.17 L75.25,14.91 L74.18,14.75 L73.10,14.70 L72.02,14.75 L70.95,14.91 L69.91,15.17 L68.89,15.54 L67.91,16.00 L66.99,16.55 L66.12,17.20 L65.32,17.92 L64.60,18.72 L63.95,19.59 L63.40,20.51 L62.94,21.49 L62.57,22.51 L62.31,23.55 L62.15,24.62 L62.10,25.70 L62.15,26.78 L62.31,27.85 L62.57,28.89 L62.94,29.91 L63.40,30.89 L63.95,31.81 L64.60,32.68 L65.32,33.48 L66.12,34.20 L66.99,34.85 L67.91,35.40 L68.89,35.86 L69.91,36.23 L70.95,36.49 L72.02,36.65 L73.10,36.70 L74.18,36.65 L75.25,36.49 L76.29,36.23 L77.31,35.86 L78.29,35.40 L79.21,34.85 L80.08,34.20 L80.88,33.48 L81.60,32.68 L82.25,31.81 L82.80,30.89 L83.26,29.91 L83.63,28.89 L83.89,27.85 L84.05,26.78 Z"/><path fill="#FFE7C2" d="M83.00,81.25 L21.40,81.25 L20.97,81.29 L20.56,81.42 L20.18,81.62 L19.84,81.89 L19.57,82.23 L19.37,82.61 L19.24,83.02 L19.20,83.45 L19.20,86.20 L19.24,86.63 L19.37,87.04 L19.57,87.42 L19.84,87.76 L20.18,88.03 L20.56,88.23 L20.97,88.36 L21.40,88.40 L83.00,88.40 L83.43,88.36 L83.84,88.23 L84.22,88.03 L84.56,87.76 L84.83,87.42 L85.03,87.04 L85.16,86.63 L85.20,86.20 L85.20,83.45 L85.16,83.02 L85.03,82.61 L84.83,82.23 L84.56,81.89 L84.22,81.62 L83.84,81.42 L83.43,81.29 Z"/><path fill="#0A5F5E" d="M60.92,43.77 L60.66,42.07 L60.24,40.39 L59.66,38.76 L58.92,37.20 L58.03,35.72 L57.00,34.33 L55.85,33.05 L54.57,31.90 L53.18,30.87 L51.70,29.98 L50.14,29.24 L48.51,28.66 L46.83,28.24 L45.13,27.98 L43.40,27.90 L41.67,27.98 L39.97,28.24 L38.29,28.66 L36.66,29.24 L35.10,29.98 L33.62,30.87 L32.23,31.90 L30.95,33.05 L29.80,34.33 L28.77,35.72 L27.88,37.20 L27.14,38.76 L26.56,40.39 L26.14,42.07 L25.88,43.77 L25.80,45.50 L25.80,81.25 L61.00,81.25 L61.00,45.50 Z"/><path fill="#F6B443" d="M56.38,64.20 L56.33,63.71 L56.19,63.23 L55.95,62.79 L55.64,62.41 L55.26,62.10 L54.82,61.86 L54.34,61.72 L53.85,61.67 L53.36,61.72 L52.88,61.86 L52.44,62.10 L52.06,62.41 L51.75,62.79 L51.51,63.23 L51.37,63.71 L51.32,64.20 L51.37,64.69 L51.51,65.17 L51.75,65.61 L52.06,65.99 L52.44,66.30 L52.88,66.54 L53.36,66.68 L53.85,66.73 L54.34,66.68 L54.82,66.54 L55.26,66.30 L55.64,65.99 L55.95,65.61 L56.19,65.17 L56.33,64.69 Z"/><path fill="#FFFFFF" d="M76.95,53.20 L71.45,53.20 L71.45,59.80 L70.59,59.88 L69.77,60.13 L69.01,60.54 L68.34,61.09 L67.79,61.76 L67.38,62.52 L67.13,63.34 L67.05,64.20 L67.05,76.85 L67.13,77.71 L67.38,78.53 L67.79,79.29 L68.34,79.96 L69.01,80.51 L69.77,80.92 L70.59,81.17 L71.45,81.25 L76.95,81.25 L77.81,81.17 L78.63,80.92 L79.39,80.51 L80.06,79.96 L80.61,79.29 L81.02,78.53 L81.27,77.71 L81.35,76.85 L81.35,64.20 L81.27,63.34 L81.02,62.52 L80.61,61.76 L80.06,61.09 L79.39,60.54 L78.63,60.13 L77.81,59.88 L76.95,59.80 Z"/><path fill="#0E7C7B" d="M76.18,50.45 L72.22,50.45 L71.96,50.48 L71.71,50.55 L71.49,50.67 L71.29,50.84 L71.12,51.04 L71.00,51.26 L70.93,51.51 L70.90,51.77 L70.90,53.53 L70.93,53.79 L71.00,54.04 L71.12,54.26 L71.29,54.46 L71.49,54.63 L71.71,54.75 L71.96,54.82 L72.22,54.85 L76.18,54.85 L76.44,54.82 L76.69,54.75 L76.91,54.63 L77.11,54.46 L77.28,54.26 L77.40,54.04 L77.47,53.79 L77.50,53.53 L77.50,51.77 L77.47,51.51 L77.40,51.26 L77.28,51.04 L77.11,50.84 L76.91,50.67 L76.69,50.55 L76.44,50.48 Z"/>
+</svg>
+            </div>
+            <h1><span class="brand">Dailoo</span> Privacy Policy</h1>
+            <p class="subtitle">Milk, newspaper, water can and every daily vendor, on one calendar</p>
+            <p class="updated">Last updated: 27 September 2026</p>
+        </header>
+
+        <div class="card">
+            <h2>In short</h2>
+            <p>Dailoo has no account, no sign-up and no server that holds your ledger. Your vendors, deliveries, bills and payments stay on your phone.</p>
+            <div class="highlight">
+                <p>We never receive your ledger. The only data that leaves the device about you is what Google's advertising SDK collects to show ads in the free version. Dailoo Pro removes the ads, and with them that data.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>What stays on your phone</h2>
+            <p>Everything you enter is kept in the app's private storage on your device:</p>
+            <ul>
+                <li><strong>Your vendors:</strong> their names and, if you add one, a vendor's phone number, which is only shown on that vendor's page</li>
+                <li><strong>What they deliver:</strong> items, quantities, schedules and prices, with the dates prices and schedules changed</li>
+                <li><strong>Each day's deliveries:</strong> the days you marked as skipped, extra or changed</li>
+                <li><strong>Breaks:</strong> dates you were away or a vendor was on leave, and the reason you chose</li>
+                <li><strong>Payments:</strong> amounts you record as paid or given in advance, the date and how you paid (cash, UPI, bank), and settled months</li>
+                <li><strong>Homes:</strong> the name of each home you keep a ledger for</li>
+                <li><strong>Settings:</strong> language, the morning check-in time, a yes-or-no flag that Pro is unlocked, and, in the free version, when the app was first opened and how many ads were shown today (so ads stay within their limits)</li>
+            </ul>
+            <p>None of this is sent to us or to anyone else by the app. The app itself makes no network request of its own.</p>
+        </div>
+
+        <div class="card">
+            <h2>Your phone's own backup</h2>
+            <p>Dailoo lets Android's built-in backup include its database, so your ledger comes back when you move to a new phone with your Google account. This backup is made by your phone, stored in your own Google account, and end-to-end encrypted with your screen lock; it is not a server of ours and we cannot read it. You can turn it off for all apps in your phone's settings, under Google, then Backup.</p>
+        </div>
+
+        <div class="card">
+            <h2>Pictures and files you share or save</h2>
+            <p>A share-count picture, a bill picture or a PDF bill is created on your phone and goes only where you send it, for example to your milkman on WhatsApp. A backup file (Pro) goes only to a folder you pick. Once you share or save a file, that app's or service's own privacy policy applies to it.</p>
+            <p>A backup file contains your whole ledger and is <strong>not encrypted</strong> (there is no account to hold a key), so keep it somewhere private.</p>
+        </div>
+
+        <div class="card">
+            <h2>Reminders</h2>
+            <p>If you turn on the morning check-in, the app schedules one notification a day on your phone listing that day's deliveries. If you plan a break, it can remind you the day before to tell your vendors. Both are created and shown on the device; nothing is sent to a server. They may appear on your lock screen depending on your notification settings. Turn the check-in off in Settings.</p>
+        </div>
+
+        <div class="card">
+            <h2>Advertising in the free version</h2>
+            <p>The free version shows occasional full-screen ads served by <strong>Google AdMob</strong> through the Google Mobile Ads SDK: at natural pauses, such as after you share a bill or save a payment, and now and then as you move between screens. They never appear in the first three days after you install the app, and never when you arrive on Today, on a bill, on a month calendar, or while you set up a vendor or a backup. You can also choose to watch a short ad to use a Pro feature once; that ad plays only when you ask for it.</p>
+            <p>To serve and measure ads and to prevent fraud, the Google Mobile Ads SDK collects and sends to Google:</p>
+            <ul>
+                <li><strong>Device identifiers:</strong> your Android advertising ID and app set ID</li>
+                <li><strong>Approximate location</strong>, derived from your IP address</li>
+                <li><strong>Ad interactions:</strong> for example which ads were shown and whether they were tapped, and app launches</li>
+                <li><strong>Diagnostics:</strong> crash logs and performance information about the ads SDK</li>
+            </ul>
+            <p>The ads SDK does not receive anything from your ledger. This data goes to Google, not to us, and is handled under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. See how Google uses information from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+            <p><strong>Consent.</strong> Where the law requires it, including in the European Economic Area, the United Kingdom and Switzerland, the app asks for your consent using Google's consent message before any ad is requested. You can change your choice later from Settings, under "Ad privacy choices".</p>
+            <p><strong>Your controls.</strong> You can reset or delete your advertising ID at any time in your phone's settings, under Google, then Ads.</p>
+        </div>
+
+        <div class="card">
+            <h2>Permissions</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Permission</th><th>Why</th><th>Status</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Internet and network state</td><td>Ads in the free version, and Google Play Billing for Pro. The app makes no request of its own</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Notifications</td><td>The morning check-in and break reminders. Asked when you turn the check-in on</td><td><span class="badge badge-ask">Asks you</span></td></tr>
+                        <tr><td>Run at start-up</td><td>Re-schedules your reminders after the phone restarts</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Advertising ID</td><td>Used by the Google Mobile Ads SDK in the free version</td><td><span class="badge badge-free">Free version</span></td></tr>
+                        <tr><td>Billing</td><td>The optional one-time Pro purchase</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Wake lock and foreground service</td><td>Added by Google's ads library for its own background tasks</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Dailoo does <strong>not</strong> ask for camera, storage, photo library, location, contacts, microphone, phone or SMS permission. Backup files go through Android's own file picker.</p>
+        </div>
+
+        <div class="card">
+            <h2>Not a payment app</h2>
+            <p>Dailoo is a record-keeping app. It does not take, send or process payments to your vendors; it records the payments you make to them yourself, in cash, UPI or otherwise. It is not connected to any dairy, newspaper or delivery company. Bills are worked out from what you entered, so check them against your own records before you settle.</p>
+        </div>
+
+        <div class="card">
+            <h2>Purchases</h2>
+            <p>Dailoo is free to download. Dailoo Pro is one optional payment, not a subscription. It removes the ads and unlocks unlimited vendors and homes, every past month, bill pictures and PDFs without the Dailoo footer, going away, advances, insights, and backup and restore.</p>
+            <p>Payment is handled entirely by Google Play. We never see your card or UPI details, billing address or any part of the transaction. The app keeps only the yes-or-no flag that Pro is unlocked. Google Play's privacy policy covers the payment itself.</p>
+        </div>
+
+        <div class="card">
+            <h2>Deleting your data</h2>
+            <ul>
+                <li>Delete a vendor, an item, a payment or a break in the app, and it is gone from your phone</li>
+                <li>Uninstall the app, or clear its storage in Android settings, to remove everything it stored</li>
+                <li>Your phone's own backup keeps a copy until it is replaced or you delete it in your Google account's backup settings</li>
+                <li>Pictures, PDFs and backup files you shared or saved elsewhere stay there until you delete them</li>
+                <li>Reset or delete your advertising ID in your phone's Google settings to break the link with past ad data</li>
+            </ul>
+            <p>There is nothing to request from us, because we hold nothing. Your Pro purchase is recorded by Google Play, so reinstalling does not lose it: use Restore purchase on the Pro page.</p>
+        </div>
+
+        <div class="card">
+            <h2>Children</h2>
+            <p>Dailoo is intended for adults running a household. It is not directed at children, and the app itself collects no personal information from anyone.</p>
+        </div>
+
+        <div class="card">
+            <h2>Changes to this policy</h2>
+            <p>If this policy changes, the updated version will appear here with a new date, and a material change will be noted in the app's release notes. If Dailoo ever gained a feature that sent more data anywhere, it would be described here plainly before the feature shipped.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Questions about this policy or the app:</p>
+            <ul>
+                <li>Email: <a href="mailto:contact@futigo.io">contact@futigo.io</a></li>
+                <li>Website: <a href="https://futigo.io">futigo.io</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Dailoo is made by <a href="https://futigo.io">Futigo</a>.</p>
+            <p>Daily deliveries, counted right.</p>
+        </footer>
+    </div>
+</body>
+</html>
