@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Glippo</title>
+    <!-- System fonts on purpose, as in the Futigo reference policy: a web
+         font from a CDN would make this page fetch a third-party resource on
+         the reader's behalf.
+         BEFORE PUBLISHING: the "Consent" paragraph describes Google's User
+         Messaging Platform flow, which is built into the app; the GDPR
+         message must also be published in AdMob (Privacy and messaging) or
+         no one is asked. Keep in step with the release build's permissions
+         (tool/check_release_permissions.sh), the ad rules in
+         lib/features/ads/ad_constants.dart, and the Health Connect
+         declaration in Play Console. -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6; color: #475569; background-color: #F8FAFC;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid #0E7C7B; }
+        .logo { width: 88px; height: 88px; margin: 0 auto 20px; }
+        .logo svg { width: 88px; height: 88px; }
+        h1 { color: #1F2937; font-size: 2rem; margin-bottom: 10px; }
+        h1 .brand { color: #0A5F5E; }
+        .subtitle { color: #475569; font-size: 1.1rem; }
+        .updated { color: #5B6B80; font-size: 0.9rem; margin-top: 10px; }
+        .card { background: #FFFFFF; border-radius: 16px; padding: 30px; margin-bottom: 20px; border: 1px solid #E2E8F0; }
+        h2 { color: #1F2937; font-size: 1.3rem; margin-bottom: 15px; }
+        p { margin-bottom: 15px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+        strong { color: #1F2937; }
+        .highlight { background: #EAF5F5; border-left: 4px solid #0E7C7B; padding: 15px 20px; border-radius: 0 8px 8px 0; margin: 20px 0; }
+        .highlight p { margin: 0; color: #1F2937; font-weight: 500; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { text-align: left; padding: 12px 15px; border-bottom: 1px solid #E2E8F0; vertical-align: top; }
+        th { background: #EAF5F5; color: #1F2937; font-weight: 600; }
+        tr:last-child td { border-bottom: none; }
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; white-space: nowrap; }
+        .badge-free { background: #FEF3E2; color: #B45309; }
+        .badge-ask { background: #E6F8F5; color: #0A5F5E; }
+        .badge-silent { background: #F1F5F9; color: #475569; }
+        a { color: #0A5F5E; }
+        footer { text-align: center; padding: 30px 20px; color: #5B6B80; font-size: 0.9rem; }
+        footer a { text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            .container { padding: 20px 16px; }
+            h1 { font-size: 1.6rem; }
+            .card { padding: 20px; }
+            th, td { padding: 10px 8px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!-- Glippo mark: pen sprout B (logo/app_icon.svg) -->
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#139290"/><stop offset="1" stop-color="#0A5F5E"/></linearGradient></defs><rect width="100" height="100" rx="22.37" fill="url(#tile)"/><defs><linearGradient id="leaf" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#6FE0B8"/><stop offset="1" stop-color="#D2F8E4"/></linearGradient></defs><g transform="translate(50 54) scale(1.1) rotate(-16) translate(-50 -54)"><path d="M50 29 C50 24 50 20 50 15" fill="none" stroke="#9FE8C9" stroke-width="2.6" stroke-linecap="round"/><path d="M50 19.5 C43 20.5 36 16.5 34 9.5 C42 8.5 48 12.5 50 19.5Z" fill="url(#leaf)"/><path d="M50 21.5 C57 21.5 64 16.5 66 9.5 C58 8.5 52 13.5 50 21.5Z" fill="url(#leaf)"/><path d="M43,28 H57 A6,6 0 0 1 63,34 V37 A6,6 0 0 1 57,43 H43 A6,6 0 0 1 37,37 V34 A6,6 0 0 1 43,28 Z" fill="#4FD1C5"/><path d="M48,39 H52 A11,11 0 0 1 63,50 V71 A11,11 0 0 1 52,82 H48 A11,11 0 0 1 37,71 V50 A11,11 0 0 1 48,39 Z" fill="#FFFFFF"/><path d="M47.5,51 H52.5 A3.5,3.5 0 0 1 56,54.5 V64.5 A3.5,3.5 0 0 1 52.5,68 H47.5 A3.5,3.5 0 0 1 44,64.5 V54.5 A3.5,3.5 0 0 1 47.5,51 Z" fill="#A7D8FF"/><path d="M49.8,81 H50.2 A1.2,1.2 0 0 1 51.4,82.2 V86.8 A1.2,1.2 0 0 1 50.2,88 H49.8 A1.2,1.2 0 0 1 48.6,86.8 V82.2 A1.2,1.2 0 0 1 49.8,81 Z" fill="#CFE9E7"/></g></svg>
+            </div>
+            <h1><span class="brand">Glippo</span> Privacy Policy</h1>
+            <p class="subtitle">A private GLP-1 injection tracker</p>
+            <p class="updated">Last updated: 27 September 2026</p>
+        </header>
+
+        <div class="card">
+            <h2>In short</h2>
+            <div class="highlight">
+                <p>Glippo has no account, no sign-up and no server. Your injections, doses, weight, side effects, notes and photos stay on your phone.</p>
+            </div>
+            <p>We never receive your health information. The only data that leaves the device about you is what Google's advertising SDK collects to show ads in the free version, and that data contains nothing you logged. Glippo Pro removes the ads, and with them that data.</p>
+        </div>
+
+        <div class="card">
+            <h2>Not medical advice</h2>
+            <p>Glippo records what you and your prescriber decided and shows it back to you. It never calculates, converts or recommends a dose, and it does not diagnose or treat anything. "Estimated levels" is a model worked out from the doses you logged and a drug's published half-life, not a measurement. Always follow your prescriber's instructions and the medicine's label.</p>
+        </div>
+
+        <div class="card">
+            <h2>What stays on your phone</h2>
+            <p>Everything you enter is kept in the app's private storage on your device:</p>
+            <ul>
+                <li><strong>Your medication:</strong> the product you chose, the unit you write doses in, your start date and the titration plan you typed in</li>
+                <li><strong>Injections:</strong> the date and time, the dose as you wrote it, the injection site, whether a dose was skipped and why, and any note</li>
+                <li><strong>Notes:</strong> weight, side effects and how strong they were, appetite, and free text</li>
+                <li><strong>Supplies:</strong> the pens or vials you track, when you opened them and their discard dates</li>
+                <li><strong>Progress photos</strong>, if you add any (see below)</li>
+                <li><strong>Settings:</strong> your weight unit, height and goal weight if you enter them, the report header (for example your name, if you type it there), reminder times, the app lock and discreet mode switches, and a yes-or-no flag that Pro is unlocked</li>
+                <li><strong>In the free version:</strong> when the app was first opened and how many ads were shown today, so ads stay within their limits</li>
+                <li><strong>A small log of in-app events</strong> such as a milestone card having been shown, so the app does not repeat itself. It never leaves the phone</li>
+            </ul>
+            <p>None of this is sent to us or to anyone else by the app. The app itself makes no network request of its own.</p>
+        </div>
+
+        <div class="card">
+            <h2>Progress photos</h2>
+            <p>Photos you take or pick are copied into the app's private storage. They are never included in the doctor report, never shared by the app, never written to Health Connect, and not included in your phone's backup, so they do not move to a new phone. Taking a photo uses your camera app, and picking one uses Android's photo picker, which shares only the photo you choose; Glippo does not ask for camera or photo library permission.</p>
+        </div>
+
+        <div class="card">
+            <h2>Your phone's own backup</h2>
+            <p>Glippo lets Android's built-in backup include its database (not your photos), so your history comes back when you move to a new phone with your Google account. This backup is made by your phone, stored in your own Google account, and end-to-end encrypted with your screen lock; it is not a server of ours and we cannot read it. You can turn it off for all apps in your phone's settings, under Google, then Backup.</p>
+        </div>
+
+        <div class="card">
+            <h2>Health Connect</h2>
+            <p>Health Connect is Android's on-device health store. If you turn it on in Settings, Glippo can:</p>
+            <ul>
+                <li><strong>Read weight</strong>, for example from a smart scale, to show it on your weight chart</li>
+                <li><strong>Write weight</strong> you log in Glippo, so other health apps you allow can see it</li>
+            </ul>
+            <p>Each direction is a separate switch and needs Health Connect's own permission. Only weight is read or written; injections, doses, side effects, notes and photos never go to Health Connect.</p>
+            <p>Data read from Health Connect is used only to show your weight inside the app. It is never sent off the phone, never shared with or sold to anyone, never used for advertising, and never used to decide eligibility for credit, insurance or anything else. Glippo's use of information received from Health Connect adheres to the Health Connect Permissions policy, including its Limited Use requirements. You can turn either switch off in Settings, or remove Glippo's access in Health Connect at any time.</p>
+        </div>
+
+        <div class="card">
+            <h2>The doctor report and what you share</h2>
+            <p>The report is built on your phone from what you logged. In the free version you show it on screen; with Pro you can also create a PDF and share it. A PDF goes only where you send it, for example to your prescriber by email. Once you share a file, that app's or service's own privacy policy applies to it. The report never includes photos or estimated levels.</p>
+        </div>
+
+        <div class="card">
+            <h2>Reminders, widget and tile</h2>
+            <p>Reminders for your injection day, a missed dose, a new plan step or a supply discard date are scheduled and shown on your phone; nothing is sent to a server. They may appear on your lock screen, depending on your notification settings. The home-screen widget and the Quick Settings tile show your next dose on your phone only.</p>
+        </div>
+
+        <div class="card">
+            <h2>App lock and discreet mode</h2>
+            <p>You can lock the app with your fingerprint, face or phone PIN. The check is done by Android; Glippo never sees or stores your biometric data. While the lock is on, the app switcher shows a blank card.</p>
+            <p>Discreet mode (Pro) renames the app to "Notes" on your home screen, swaps its icon, and replaces reminder text with a plain "Reminder". Android's own list of apps still shows the real name.</p>
+        </div>
+
+        <div class="card">
+            <h2>Advertising in the free version</h2>
+            <p>The free version shows a small ad card further down the home screen and in your history, and an occasional full-screen ad as you move between screens. Full-screen ads are limited to three a day with at least three minutes between them. There are no ads in the first week after you install the app, and no full-screen ad while you set up the app, open the doctor report, edit your plan or your supplies, or change a setting. After you log a skipped dose or a severe side effect, the app stays quiet for half an hour.</p>
+            <p>Ads are served by Google AdMob through the Google Mobile Ads SDK. The app asks for general-audience ads only, and passes nothing you logged to the ads SDK. To serve and measure ads and to prevent fraud, the SDK collects and sends to Google:</p>
+            <ul>
+                <li>Device identifiers: your Android advertising ID and app set ID</li>
+                <li>Approximate location, derived from your IP address</li>
+                <li>Ad interactions: for example which ads were shown and whether they were tapped, and app launches</li>
+                <li>Diagnostics: crash logs and performance information about the ads SDK</li>
+            </ul>
+            <p>This data goes to Google, not to us, and is handled under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. See how Google uses information from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+            <p><strong>Consent.</strong> Where the law requires it, including in the European Economic Area, the United Kingdom and Switzerland, the app asks for your consent using Google's consent message before any ad is requested. You can change your choice later from Settings, under Privacy, then "Ad privacy choices".</p>
+            <p><strong>Your controls.</strong> You can reset or delete your advertising ID at any time in your phone's settings, under Google, then Ads.</p>
+        </div>
+
+        <div class="card">
+            <h2>Permissions</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Permission</th><th>Why</th><th>Status</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Notifications</td><td>Your injection-day reminder and the other reminders above</td><td><span class="badge badge-ask">Asks you</span></td></tr>
+                        <tr><td>Alarms and reminders</td><td>Exact reminder times. Only if you allow it from Settings; otherwise Android may deliver a reminder a few minutes late</td><td><span class="badge badge-ask">Asks you</span></td></tr>
+                        <tr><td>Run at start-up</td><td>Re-schedules your reminders after the phone restarts</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Biometrics</td><td>The optional app lock. Android does the check</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Health Connect: weight</td><td>Optional weight sync, read and write, each asked for separately</td><td><span class="badge badge-ask">Asks you</span></td></tr>
+                        <tr><td>Internet and network state</td><td>Ads in the free version, and Google Play Billing for Pro. The app makes no request of its own</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Advertising ID</td><td>Used by the Google Mobile Ads SDK in the free version</td><td><span class="badge badge-free">Free version</span></td></tr>
+                        <tr><td>Billing</td><td>The optional one-time Pro purchase</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Wake lock and foreground service</td><td>Added by Google's ads library for its own background tasks</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Vibration</td><td>Reminder notifications</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Glippo does <strong>not</strong> ask for camera, storage, photo library, location, contacts, microphone, phone or SMS permission.</p>
+        </div>
+
+        <div class="card">
+            <h2>Purchases</h2>
+            <p>Glippo is free to download. Glippo Pro is one optional payment, not a subscription. It removes the ads and adds the shareable PDF report with any date range, Insights, unlimited history, supply tracking, the home-screen widget and Quick Settings tile, and discreet mode.</p>
+            <p>Payment is handled entirely by Google Play. We never see your card details, billing address or any part of the transaction. The app keeps only the yes-or-no flag that Pro is unlocked. Google Play's privacy policy covers the payment itself.</p>
+        </div>
+
+        <div class="card">
+            <h2>Deleting your data</h2>
+            <ul>
+                <li>Delete an injection, a note or a photo in the app, and it is gone from your phone</li>
+                <li>Uninstall the app, or clear its storage in Android settings, to remove everything it stored</li>
+                <li>Your phone's own backup keeps a copy of the database until it is replaced or you delete it in your Google account's backup settings</li>
+                <li>Weight Glippo wrote to Health Connect stays there until you delete it in Health Connect</li>
+                <li>Reports you shared stay wherever you sent them until you delete them</li>
+                <li>Reset or delete your advertising ID in your phone's Google settings to break the link with past ad data</li>
+            </ul>
+            <p>There is nothing to request from us, because we hold nothing. Your Pro purchase is recorded by Google Play, so reinstalling does not lose it: use Restore purchase on the Pro page.</p>
+        </div>
+
+        <div class="card">
+            <h2>Children</h2>
+            <p>Glippo is intended for adults using a prescribed medicine. It is not directed at children, and the app itself collects no personal information from anyone.</p>
+        </div>
+
+        <div class="card">
+            <h2>Changes to this policy</h2>
+            <p>If this policy changes, the updated version will appear here with a new date, and a material change will be noted in the app's release notes. If Glippo ever gained a feature that sent more data anywhere, it would be described here plainly before the feature shipped.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Questions about this policy or the app:</p>
+            <ul>
+                <li>Email: <a href="mailto:contact@futigo.io">contact@futigo.io</a></li>
+                <li>Website: <a href="https://futigo.io">futigo.io</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Glippo is made by <a href="https://futigo.io">Futigo</a>.</p>
+            <p>Glippo is not affiliated with or endorsed by the makers of any medicine it lets you record.</p>
+        </footer>
+    </div>
+</body>
+</html>
