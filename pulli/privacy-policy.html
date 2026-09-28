@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Pulli</title>
+    <!-- System fonts on purpose, as in the Futigo reference policy: a web
+         font from a CDN would make this page fetch a third-party resource on
+         the reader's behalf. The logo is inlined for the same reason.
+         BEFORE PUBLISHING: the "Consent" paragraph describes Google's User
+         Messaging Platform flow, which is built into the app; the GDPR
+         message must also be published in AdMob (Privacy and messaging) or
+         no one is asked. Keep in step with the release build's permissions
+         (tool/check_release_permissions.sh), the ad rules in
+         lib/ads/ad_gate.dart, and the free limits in lib/app/pro.dart. -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6; color: #6F6258; background-color: #F9F2E7;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid #D87D41; }
+        .logo { width: 88px; height: 88px; margin: 0 auto 20px; }
+        .logo img { width: 88px; height: 88px; border-radius: 20px; display: block; }
+        h1 { color: #311F1F; font-size: 2rem; margin-bottom: 10px; }
+        h1 .brand { color: #1E2C54; }
+        .subtitle { color: #6F6258; font-size: 1.1rem; }
+        .updated { color: #6F6258; font-size: 0.9rem; margin-top: 10px; }
+        .card { background: #FFFDF8; border-radius: 16px; padding: 30px; margin-bottom: 20px; border: 1px solid #E4D8C6; }
+        h2 { color: #311F1F; font-size: 1.3rem; margin-bottom: 15px; }
+        p { margin-bottom: 15px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+        strong { color: #311F1F; }
+        .highlight { background: #F9F2E7; border-left: 4px solid #D87D41; padding: 15px 20px; border-radius: 0 8px 8px 0; margin: 20px 0; }
+        .highlight p { margin: 0; color: #311F1F; font-weight: 500; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { text-align: left; padding: 12px 15px; border-bottom: 1px solid #E4D8C6; vertical-align: top; }
+        th { background: #F9F2E7; color: #311F1F; font-weight: 600; }
+        tr:last-child td { border-bottom: none; }
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; white-space: nowrap; }
+        .badge-free { background: #FBEBDD; color: #9B5122; }
+        .badge-ask { background: #E7EAF2; color: #1E2C54; }
+        .badge-silent { background: #F3ECE2; color: #6F6258; }
+        a { color: #1E2C54; }
+        footer { text-align: center; padding: 30px 20px; color: #6F6258; font-size: 0.9rem; }
+        footer a { text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            .container { padding: 20px 16px; }
+            h1 { font-size: 1.6rem; }
+            .card { padding: 20px; }
+            th, td { padding: 10px 8px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!-- Pulli mark: assets/brand/pulli_logo_512.png, scaled down -->
+                <img alt="" src="data:image/png;base64,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">
+            </div>
+            <h1><span class="brand">Pulli</span> Privacy Policy</h1>
+            <p class="subtitle">Kolam &amp; Rangoli Maker</p>
+            <p class="updated">Last updated: 28 September 2026</p>
+        </header>
+
+        <div class="card">
+            <h2>In short</h2>
+            <div class="highlight">
+                <p>Pulli has no account, no sign-up and no server. Your saved kolams, your progress and your settings stay on your phone.</p>
+            </div>
+            <p>We never receive anything about you. The only data that leaves the device is what Google's advertising SDK collects to show ads in the free version, and that data contains nothing you did in the app beyond seeing an ad. Pulli Pro removes the ads, and with them that data.</p>
+        </div>
+
+        <div class="card">
+            <h2>What stays on your phone</h2>
+            <p>Everything Pulli remembers is kept in the app's private storage on your device:</p>
+            <ul>
+                <li><strong>Saved kolams:</strong> the design codes of the kolams you saved (a code like PK-S07R4-4G0007E is enough to draw the kolam again)</li>
+                <li><strong>Learning progress:</strong> which levels you marked as drawn</li>
+                <li><strong>Your streak:</strong> the last day you opened the app and how many days in a row</li>
+                <li><strong>Settings:</strong> your floor, your language, and whether the morning reminder is on and at what time</li>
+                <li><strong>Pro:</strong> a yes-or-no flag that Pro is unlocked</li>
+                <li><strong>In the free version:</strong> how many new kolams you made today, whether you used Floor mode today, and when the app was first opened, so the free limits and the ad rules work</li>
+            </ul>
+            <p>None of this is sent to us or to anyone else by the app. The app itself makes no network request of its own. The kolam of the day is worked out on your phone from the date, so it needs no internet at all.</p>
+        </div>
+
+        <div class="card">
+            <h2>Your phone's own backup</h2>
+            <p>Pulli lets Android's built-in backup include its settings, so your saved kolams and progress come back when you move to a new phone with your Google account. This backup is made by your phone, stored in your own Google account, and end-to-end encrypted with your screen lock; it is not a server of ours and we cannot read it. You can turn it off for all apps in your phone's settings, under Google, then Backup.</p>
+        </div>
+
+        <div class="card">
+            <h2>Sharing a kolam</h2>
+            <p>When you tap Share, Pulli draws a picture of the kolam on your phone, saves it to a temporary file, and opens Android's share sheet. The picture shows the kolam, its design code and a small Pulli footer; nothing else. It goes only where you choose to send it, for example to a WhatsApp chat. Once you share it, that app's own privacy policy applies. Pulli does not need permission to read your photos or storage for this.</p>
+        </div>
+
+        <div class="card">
+            <h2>The morning reminder</h2>
+            <p>The reminder is off until you turn it on. When you do, Android asks you to allow notifications. The reminder is scheduled and shown on your phone; nothing is sent to a server. It may appear on your lock screen, depending on your notification settings. After your phone restarts, Pulli sets it again.</p>
+        </div>
+
+        <div class="card">
+            <h2>Advertising in the free version</h2>
+            <p>The free version shows an occasional full-screen ad at a natural break: when you finish watching a replay, when you complete a level, or when you leave Create after making several kolams. There is never an ad when the app opens, in your first two minutes with the app, during a replay, or straight after you share or tap a notification. Ads are at least three minutes apart, with no more than four each time you use the app.</p>
+            <p>Ads are served by Google AdMob through the Google Mobile Ads SDK. The app asks for ads suitable for a general audience (rated G) only, and passes nothing about your kolams or your use of the app to the ads SDK. To serve and measure ads and to prevent fraud, the SDK collects and sends to Google:</p>
+            <ul>
+                <li>Device identifiers: your Android advertising ID and app set ID</li>
+                <li>Approximate location, derived from your IP address</li>
+                <li>Ad interactions: for example which ads were shown and whether they were tapped, and app launches</li>
+                <li>Diagnostics: crash logs and performance information about the ads SDK</li>
+            </ul>
+            <p>This data goes to Google, not to us, and is handled under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. See how Google uses information from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+            <p><strong>Consent.</strong> Where the law requires it, including in the European Economic Area, the United Kingdom and Switzerland, the app asks for your consent using Google's consent message before any ad is requested. You can change your choice later from Settings, under "Privacy options".</p>
+            <p><strong>Your controls.</strong> You can reset or delete your advertising ID at any time in your phone's settings, under Google, then Ads.</p>
+        </div>
+
+        <div class="card">
+            <h2>Permissions</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Permission</th><th>Why</th><th>Status</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Notifications</td><td>The morning reminder, only if you turn it on</td><td><span class="badge badge-ask">Asks you</span></td></tr>
+                        <tr><td>Run at start-up</td><td>Sets the reminder again after the phone restarts</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Internet and network state</td><td>Ads in the free version, and Google Play Billing for Pro. The app makes no request of its own</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Advertising ID</td><td>Used by the Google Mobile Ads SDK in the free version</td><td><span class="badge badge-free">Free version</span></td></tr>
+                        <tr><td>Billing</td><td>The optional one-time Pro purchase</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Wake lock and foreground service</td><td>Added by Google's ads library for its own background tasks</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Vibration</td><td>The reminder notification</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>While a replay is open, Pulli keeps your screen on so it does not go dark while you draw. Android allows this without a permission, and the screen behaves normally again as soon as you leave the replay.</p>
+            <p>Pulli does <strong>not</strong> ask for camera, storage, photo library, location, contacts, microphone, phone or SMS permission.</p>
+        </div>
+
+        <div class="card">
+            <h2>Purchases</h2>
+            <p>Pulli is free to download. Pulli Pro is one optional payment, not a subscription. It removes the ads and opens all 30 levels, unlimited new kolams in every size, shape, symmetry and detail, every floor, every past kolam of the day, Floor mode whenever you draw, unlimited saved kolams, sharper share images and printable practice sheets.</p>
+            <p>Payment is handled entirely by Google Play. We never see your card or UPI details, billing address or any part of the transaction. The app keeps only the yes-or-no flag that Pro is unlocked. Google Play's privacy policy covers the payment itself.</p>
+        </div>
+
+        <div class="card">
+            <h2>Deleting your data</h2>
+            <ul>
+                <li>Remove a kolam from Saved, and it is gone from your phone</li>
+                <li>Uninstall the app, or clear its storage in Android settings, to remove everything it stored</li>
+                <li>Your phone's own backup keeps a copy of Pulli's settings until it is replaced or you delete it in your Google account's backup settings</li>
+                <li>Pictures you shared stay wherever you sent them until you delete them</li>
+                <li>Reset or delete your advertising ID in your phone's Google settings to break the link with past ad data</li>
+            </ul>
+            <p>There is nothing to request from us, because we hold nothing. Your Pro purchase is recorded by Google Play, so reinstalling does not lose it: use Restore purchase in Settings or on the Pro page.</p>
+        </div>
+
+        <div class="card">
+            <h2>Children</h2>
+            <p>Pulli is made for teenagers and adults who draw kolams, and for families who draw them together. It is not directed at children under 13, and the app itself collects no personal information from anyone. Ads are limited to content suitable for a general audience.</p>
+        </div>
+
+        <div class="card">
+            <h2>Changes to this policy</h2>
+            <p>If this policy changes, the updated version will appear here with a new date, and a material change will be noted in the app's release notes. If Pulli ever gained a feature that sent more data anywhere, it would be described here plainly before the feature shipped.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Questions about this policy or the app:</p>
+            <ul>
+                <li>Email: <a href="mailto:contact@futigo.io">contact@futigo.io</a></li>
+                <li>Website: <a href="https://futigo.io">futigo.io</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Pulli is made by <a href="https://futigo.io">Futigo</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>
