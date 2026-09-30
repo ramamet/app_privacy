@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Rangoli Studio</title>
+    <!-- System fonts on purpose, as in the Futigo reference policy: a web
+         font from a CDN would make this page fetch a third-party resource on
+         the reader's behalf. The logo is inlined for the same reason.
+         BEFORE PUBLISHING: the "Consent" paragraph describes Google's User
+         Messaging Platform flow, which is built into the app; the GDPR
+         message must also be published in AdMob (Privacy and messaging) or
+         no one is asked. Keep in step with the release build's permissions
+         (tool/check_release_permissions.sh), the ad rules in
+         lib/ads/ad_gate.dart, the free limits in lib/app/pro.dart, and what
+         the app stores (lib/app/store.dart, lib/app/drawing_store.dart). -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6; color: #6F6258; background-color: #F9F2E7;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid #D87D41; }
+        .logo { width: 88px; height: 88px; margin: 0 auto 20px; }
+        .logo img { width: 88px; height: 88px; border-radius: 20px; display: block; }
+        h1 { color: #311F1F; font-size: 2rem; margin-bottom: 10px; }
+        h1 .brand { color: #1E2C54; }
+        .subtitle { color: #6F6258; font-size: 1.1rem; }
+        .updated { color: #6F6258; font-size: 0.9rem; margin-top: 10px; }
+        .card { background: #FFFDF8; border-radius: 16px; padding: 30px; margin-bottom: 20px; border: 1px solid #E4D8C6; }
+        h2 { color: #311F1F; font-size: 1.3rem; margin-bottom: 15px; }
+        p { margin-bottom: 15px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+        strong { color: #311F1F; }
+        .highlight { background: #F9F2E7; border-left: 4px solid #D87D41; padding: 15px 20px; border-radius: 0 8px 8px 0; margin: 20px 0; }
+        .highlight p { margin: 0; color: #311F1F; font-weight: 500; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { text-align: left; padding: 12px 15px; border-bottom: 1px solid #E4D8C6; vertical-align: top; }
+        th { background: #F9F2E7; color: #311F1F; font-weight: 600; }
+        tr:last-child td { border-bottom: none; }
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; white-space: nowrap; }
+        .badge-free { background: #FBEBDD; color: #9B5122; }
+        .badge-ask { background: #E7EAF2; color: #1E2C54; }
+        .badge-silent { background: #F3ECE2; color: #6F6258; }
+        a { color: #1E2C54; }
+        footer { text-align: center; padding: 30px 20px; color: #6F6258; font-size: 0.9rem; }
+        footer a { text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            .container { padding: 20px 16px; }
+            h1 { font-size: 1.6rem; }
+            .card { padding: 20px; }
+            th, td { padding: 10px 8px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!-- Rangoli Studio mark: assets/brand/rangoli_studio_logo_512.png, scaled down -->
+                <img alt="" src="data:image/png;base64,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">
+            </div>
+            <h1><span class="brand">Rangoli Studio</span> Privacy Policy</h1>
+            <p class="subtitle">Draw &amp; Colour</p>
+            <p class="updated">Last updated: 30 September 2026</p>
+        </header>
+
+        <div class="card">
+            <h2>In short</h2>
+            <div class="highlight">
+                <p>Rangoli Studio has no account, no sign-up and no server. Your drawings and your settings stay on your phone.</p>
+            </div>
+            <p>We never receive anything about you. The only data that leaves the device is what Google's advertising SDK collects to show ads in the free version, and that data contains nothing you did in the app beyond seeing an ad. Rangoli Studio Pro removes the ads, and with them that data.</p>
+        </div>
+
+        <div class="card">
+            <h2>What stays on your phone</h2>
+            <p>Everything Rangoli Studio remembers is kept in the app's private storage on your device:</p>
+            <ul>
+                <li><strong>Your drawings:</strong> each rangoli or kolam you draw, with its lines, shapes, colours and name, in a file of its own</li>
+                <li><strong>Settings:</strong> your floor for new drawings and your language</li>
+                <li><strong>Where you left off:</strong> the colour and material in your hand, the colours you used recently, and the last grid and symmetry you chose</li>
+                <li><strong>Pro:</strong> a yes-or-no flag that Pro is unlocked</li>
+                <li><strong>In the free version:</strong> how many times you used Colour it for me today, and when the app was first opened, so the free limits and the ad rules work</li>
+                <li><strong>Pictures of designs:</strong> small pictures of the designs you have seen, kept in the app's cache so they appear quickly; your phone may clear them at any time</li>
+                <li><strong>A note of errors:</strong> if something goes wrong inside the app, a short technical note of the error is kept, so the problem can be found if you choose to tell us about it</li>
+            </ul>
+            <p>None of this is sent to us or to anyone else by the app. The app itself makes no network request of its own. Today's design and every design on the Designs screen are made on your phone, so they need no internet at all.</p>
+        </div>
+
+        <div class="card">
+            <h2>Your phone's own backup</h2>
+            <p>Rangoli Studio lets Android's built-in backup include its files, so your drawings and settings come back when you move to a new phone with your Google account. This backup is made by your phone, stored in your own Google account, and end-to-end encrypted with your screen lock; it is not a server of ours and we cannot read it. You can turn it off for all apps in your phone's settings, under Google, then Backup.</p>
+        </div>
+
+        <div class="card">
+            <h2>Sharing a rangoli</h2>
+            <p>When you tap Share, Rangoli Studio draws a picture of your rangoli on your phone, saves it to a temporary file, and opens Android's share sheet. The picture shows the rangoli on its floor and a small Rangoli Studio footer; nothing else. It goes only where you choose to send it, for example to a WhatsApp chat, with the line "Made in Rangoli Studio" and a link to the app on Google Play. Once you share it, that app's own privacy policy applies. Rangoli Studio does not need permission to read your photos or storage for this.</p>
+        </div>
+
+        <div class="card">
+            <h2>Advertising in the free version</h2>
+            <p>The free version shows an occasional full-screen ad at a natural break: when you leave a drawing after making at least ten changes to it, or when you leave a design after following its steps to the end. There is never an ad while you draw, when the app opens, in your first two minutes with the app, or within a minute of sharing. Ads are at least three minutes apart, with no more than four each time you use the app.</p>
+            <p>Ads are served by Google AdMob through the Google Mobile Ads SDK. The app asks for ads suitable for a general audience (rated G) only, and passes nothing about your drawings or your use of the app to the ads SDK. To serve and measure ads and to prevent fraud, the SDK collects and sends to Google:</p>
+            <ul>
+                <li><strong>Device identifiers:</strong> your Android advertising ID and app set ID</li>
+                <li><strong>Approximate location</strong>, derived from your IP address</li>
+                <li><strong>Ad interactions:</strong> for example which ads were shown and whether they were tapped, and app launches</li>
+                <li><strong>Diagnostics:</strong> crash logs and performance information about the ads SDK</li>
+            </ul>
+            <p>This data goes to Google, not to us, and is handled under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. See how Google uses information from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+            <p><strong>Consent.</strong> Where the law requires it, including in the European Economic Area, the United Kingdom and Switzerland, the app asks for your consent using Google's consent message before any ad is requested. You can change your choice later from Settings, under "Privacy options".</p>
+            <p><strong>Your controls.</strong> You can reset or delete your advertising ID at any time in your phone's settings, under Google, then Ads.</p>
+        </div>
+
+        <div class="card">
+            <h2>Permissions</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Permission</th><th>Why</th><th>Status</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Internet and network state</td><td>Ads in the free version, and Google Play Billing for Pro. The app makes no request of its own</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Advertising ID</td><td>Used by the Google Mobile Ads SDK in the free version</td><td><span class="badge badge-free">Free version</span></td></tr>
+                        <tr><td>Billing</td><td>The optional one-time Pro purchase</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Wake lock and foreground service</td><td>Added by Google's ads library for its own background tasks</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Rangoli Studio never asks you for a permission. It sends no notifications, does not start when your phone starts, and does <strong>not</strong> ask for camera, storage, photo library, location, contacts, microphone, phone or SMS permission.</p>
+        </div>
+
+        <div class="card">
+            <h2>Purchases</h2>
+            <p>Rangoli Studio is free to download. Rangoli Studio Pro is one optional payment, not a subscription. It removes the ads and opens all five floors, flower petals and glossy paint, every design on the Designs screen, Colour it for me as often as you like, and sharper pictures to share.</p>
+            <p>Payment is handled entirely by Google Play. We never see your card or UPI details, billing address or any part of the transaction. The app keeps only the yes-or-no flag that Pro is unlocked. Google Play's privacy policy covers the payment itself.</p>
+        </div>
+
+        <div class="card">
+            <h2>Deleting your data</h2>
+            <ul>
+                <li>Delete a drawing from My rangoli, and it is gone from your phone</li>
+                <li>Uninstall the app, or clear its storage in Android settings, to remove everything it stored</li>
+                <li>Your phone's own backup keeps a copy of Rangoli Studio's files until it is replaced or you delete it in your Google account's backup settings</li>
+                <li>Pictures you shared stay wherever you sent them until you delete them</li>
+                <li>Reset or delete your advertising ID in your phone's Google settings to break the link with past ad data</li>
+            </ul>
+            <p>There is nothing to request from us, because we hold nothing. Your Pro purchase is recorded by Google Play, so reinstalling does not lose it: use Restore purchase in Settings.</p>
+        </div>
+
+        <div class="card">
+            <h2>Children</h2>
+            <p>Rangoli Studio is made for teenagers and adults who make rangoli and kolam for their homes and festivals, and for families who draw them together. It is not directed at children under 13, and the app itself collects no personal information from anyone. Ads are limited to content suitable for a general audience.</p>
+        </div>
+
+        <div class="card">
+            <h2>Changes to this policy</h2>
+            <p>If this policy changes, the updated version will appear here with a new date, and a material change will be noted in the app's release notes. If Rangoli Studio ever gained a feature that sent more data anywhere, it would be described here plainly before the feature shipped.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Questions about this policy or the app:</p>
+            <ul>
+                <li>Email: <a href="mailto:contact@futigo.io">contact@futigo.io</a></li>
+                <li>Website: <a href="https://futigo.io">futigo.io</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Rangoli Studio is made by <a href="https://futigo.io">Futigo</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>
