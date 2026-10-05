@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Looplet</title>
+    <!-- System fonts on purpose, as in the Futigo reference policy: a web
+         font from a CDN would make this page fetch a third-party resource on
+         the reader's behalf. The logo is inlined for the same reason.
+         BEFORE PUBLISHING: the "Consent" paragraph describes Google's User
+         Messaging Platform flow, which is built into the app; the GDPR
+         message must also be published in AdMob (Privacy and messaging) or
+         no one is asked. Keep in step with the release build's permissions
+         (tool/check_release_permissions.sh), the ad rules in lib/app/ads.dart
+         (adDue), the free set in lib/app/entitlements.dart, and what the app
+         stores (lib/app/store.dart). If the Privacy Sandbox permissions are
+         removed (PLAY_STORE_PACKAGES.md section 4), drop them from the
+         Permissions table. -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6; color: #6F6258; background-color: #FFF6EC;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 3px solid #FFB627; }
+        .logo { width: 88px; height: 88px; margin: 0 auto 20px; }
+        .logo img { width: 88px; height: 88px; border-radius: 22px; display: block; }
+        h1 { color: #311F1F; font-size: 2rem; margin-bottom: 10px; }
+        h1 .brand { color: #1E2C54; }
+        .subtitle { color: #6F6258; font-size: 1.1rem; }
+        .updated { color: #6F6258; font-size: 0.9rem; margin-top: 10px; }
+        .card { background: #FFFDF8; border-radius: 22px; padding: 30px; margin-bottom: 20px; border: 1px solid #E4D8C6; }
+        h2 { color: #311F1F; font-size: 1.3rem; margin-bottom: 15px; }
+        p { margin-bottom: 15px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+        strong { color: #311F1F; }
+        .highlight { background: #FFF6EC; border-left: 4px solid #FFB627; padding: 15px 20px; border-radius: 0 12px 12px 0; margin: 20px 0; }
+        .highlight p { margin: 0; color: #311F1F; font-weight: 500; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { text-align: left; padding: 12px 15px; border-bottom: 1px solid #E4D8C6; vertical-align: top; }
+        th { background: #FFF6EC; color: #311F1F; font-weight: 600; }
+        tr:last-child td { border-bottom: none; }
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; white-space: nowrap; }
+        .badge-free { background: #FFE2CC; color: #9E3300; }
+        .badge-silent { background: #F1E6D6; color: #6F6258; }
+        a { color: #1E2C54; }
+        footer { text-align: center; padding: 30px 20px; color: #6F6258; font-size: 0.9rem; }
+        footer a { text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            .container { padding: 20px 16px; }
+            h1 { font-size: 1.6rem; }
+            .card { padding: 20px; }
+            th, td { padding: 10px 8px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!-- Looplet mark: assets/brand/loop_logo_512.png, scaled down -->
+                <img alt="" src="data:image/png;base64,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">
+            </div>
+            <h1><span class="brand">Looplet</span> Privacy Policy</h1>
+            <p class="subtitle">Tangle to one line</p>
+            <p class="updated">Last updated: 5 October 2026</p>
+        </header>
+
+        <div class="card">
+            <h2>In short</h2>
+            <div class="highlight">
+                <p>Looplet has no account, no sign-up and no server. Your results, your streak and your settings stay on your phone.</p>
+            </div>
+            <p>We never receive anything about you. The only data that leaves the device is what Google's advertising SDK collects to show ads in the free version, and that data contains nothing you did in the app beyond seeing an ad. Looplet Pro removes the ads, and with them that data.</p>
+        </div>
+
+        <div class="card">
+            <h2>What stays on your phone</h2>
+            <p>Everything Looplet remembers is kept in the app's private storage on your device:</p>
+            <ul>
+                <li><strong>Your results:</strong> for each daily puzzle, hard puzzle, Journey puzzle and level you solve, the taps, time, stars and moves of your best (or first) solve</li>
+                <li><strong>Your streak:</strong> how many days in a row you solved the daily puzzle, your best, and the one missed day it forgave</li>
+                <li><strong>A puzzle in progress:</strong> today's puzzle as you left it, so you can come back to it</li>
+                <li><strong>Settings:</strong> tap feedback, whether the clock shows, your floor and your loop colours</li>
+                <li><strong>Tallies:</strong> how many Free play puzzles you started and solved, and your Timed scores</li>
+                <li><strong>Pro:</strong> a yes-or-no flag that you have Looplet Pro</li>
+                <li><strong>In the free version:</strong> how many hints you used today, when you finished the first lessons, and how many puzzles you solved since the last ad and when it was shown, so the hint limit and the ad rules work</li>
+            </ul>
+            <p>None of this is sent to us or to anyone else by the app. The app itself makes no network request of its own. Every puzzle is made on your phone, so the puzzles need no internet at all.</p>
+        </div>
+
+        <div class="card">
+            <h2>Your phone's own backup</h2>
+            <p>Looplet lets Android's built-in backup include its settings file, so your results, streak and settings come back when you move to a new phone with your Google account. This backup is made by your phone, stored in your own Google account, and end-to-end encrypted with your screen lock; it is not a server of ours and we cannot read it. You can turn it off for all apps in your phone's settings, under Google, then Backup.</p>
+        </div>
+
+        <div class="card">
+            <h2>Sharing a result, and a friend's puzzle</h2>
+            <p>When you tap Share, Looplet writes a few lines of text on your phone (the puzzle's number and board, your taps against par, your stars and streak, and the puzzle's code) and opens Android's share sheet. It goes only where you choose to send it, for example to a WhatsApp chat. Once you share it, that app's own privacy policy applies.</p>
+            <p>To play a friend's puzzle, you paste their code into Looplet. The code is read on your phone to build the same puzzle; nothing is looked up or sent anywhere.</p>
+            <p>Looplet does not need permission to read your photos, files or contacts for either.</p>
+        </div>
+
+        <div class="card">
+            <h2>Advertising in the free version</h2>
+            <p>The free version shows an occasional full-screen ad, only at a break after you solve a puzzle: when you go on to the next puzzle or leave the result, or when a Timed sprint ends. There is never an ad while you play, when the app opens, or on your first day with the app. Ads are at least three solved puzzles and three minutes apart. If no ad is ready, you go straight on.</p>
+            <p>Ads are served by Google AdMob through the Google Mobile Ads SDK. The app asks for ads suitable for a general audience (rated G) only, and passes nothing about your puzzles or your use of the app to the ads SDK. To serve and measure ads and to prevent fraud, the SDK collects and sends to Google:</p>
+            <ul>
+                <li><strong>Device identifiers:</strong> your Android advertising ID and app set ID</li>
+                <li><strong>Approximate location</strong>, derived from your IP address</li>
+                <li><strong>Ad interactions:</strong> for example which ads were shown and whether they were tapped, and app launches</li>
+                <li><strong>Diagnostics:</strong> crash logs and performance information about the ads SDK</li>
+            </ul>
+            <p>This data goes to Google, not to us, and is handled under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. See how Google uses information from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+            <p><strong>Consent.</strong> Where the law requires it, including in the European Economic Area, the United Kingdom and Switzerland, the app asks for your consent using Google's consent message, after the first lessons and before any ad is requested. You can change your choice later from Settings, under "Privacy choices".</p>
+            <p><strong>Your controls.</strong> You can reset or delete your advertising ID at any time in your phone's settings, under Google, then Ads.</p>
+        </div>
+
+        <div class="card">
+            <h2>Permissions</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Permission</th><th>Why</th><th>Status</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Internet and network state</td><td>Ads in the free version, and Google Play Billing for Pro. The app makes no request of its own</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Advertising ID</td><td>Used by the Google Mobile Ads SDK in the free version</td><td><span class="badge badge-free">Free version</span></td></tr>
+                        <tr><td>Ad services (Android's Privacy Sandbox)</td><td>Added by the Google Mobile Ads SDK, for Android's own ad measurement and topics</td><td><span class="badge badge-free">Free version</span></td></tr>
+                        <tr><td>Billing</td><td>The optional one-time Pro purchase</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Wake lock and foreground service</td><td>Added by Google's ads library for its own background tasks</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Looplet never asks you for a permission. It keeps the screen on while a puzzle is open, which needs no permission. It sends no notifications, does not start when your phone starts, and does <strong>not</strong> ask for camera, storage, photo library, location, contacts, microphone, phone or SMS permission.</p>
+        </div>
+
+        <div class="card">
+            <h2>Purchases</h2>
+            <p>Looplet is free to download. Looplet Pro is one optional payment, not a subscription. It removes the ads and opens four more Journey chapters, every past daily puzzle back to the first, as many hints as you like, and three more floors and the Festival colours.</p>
+            <p>Payment is handled entirely by Google Play. We never see your card or UPI details, billing address or any part of the transaction. The app keeps only the yes-or-no flag that you have Pro. Google Play's privacy policy covers the payment itself.</p>
+        </div>
+
+        <div class="card">
+            <h2>Deleting your data</h2>
+            <ul>
+                <li>Uninstall the app, or clear its storage in Android settings, to remove everything it stored</li>
+                <li>Your phone's own backup keeps a copy of Looplet's settings file until it is replaced or you delete it in your Google account's backup settings</li>
+                <li>Results you shared stay wherever you sent them until you delete them</li>
+                <li>Reset or delete your advertising ID in your phone's Google settings to break the link with past ad data</li>
+            </ul>
+            <p>There is nothing to request from us, because we hold nothing. Your Pro purchase is recorded by Google Play, so reinstalling does not lose it: use Restore a purchase on the Looplet Pro screen.</p>
+        </div>
+
+        <div class="card">
+            <h2>Children</h2>
+            <p>Looplet is a logic puzzle made for teenagers and adults. It is not directed at children under 13, and the app itself collects no personal information from anyone. Ads are limited to content suitable for a general audience.</p>
+        </div>
+
+        <div class="card">
+            <h2>Changes to this policy</h2>
+            <p>If this policy changes, the updated version will appear here with a new date, and a material change will be noted in the app's release notes. If Looplet ever gained a feature that sent more data anywhere, it would be described here plainly before the feature shipped.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Questions about this policy or the app:</p>
+            <ul>
+                <li>Email: <a href="mailto:contact@futigo.io">contact@futigo.io</a></li>
+                <li>Website: <a href="https://futigo.io">futigo.io</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Looplet is made by <a href="https://futigo.io">Futigo</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>
