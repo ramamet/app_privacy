@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Monsoon Sail</title>
+    <!-- System fonts on purpose, as in the Futigo reference policy: a web
+         font from a CDN would make this page fetch a third-party resource on
+         the reader's behalf. The logo is inlined for the same reason.
+         Colours are the app mark's own (scripts/ui/logo.gd): monsoon blue,
+         notebook paper, the red margin and the lamp's warm glow.
+         BEFORE PUBLISHING: the "Consent" paragraph describes the Privacy
+         choices link on the title screen (scripts/core/ads.gd, built). Also
+         publish the GDPR message in AdMob (Privacy and messaging), or no one
+         is asked. Keep in step with the release build's permissions
+         (tools/build_release.sh --check-manifest), the ad rules in
+         data/ads.json and scripts/core/ad_rules.gd, and the stored keys in
+         scripts/core/save.gd (Save.KEYS). -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6; color: #44505E; background-color: #EEF2F6;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid #D9534F; }
+        .logo { width: 88px; height: 88px; margin: 0 auto 20px; }
+        .logo img { width: 88px; height: 88px; border-radius: 20px; display: block; }
+        h1 { color: #0D1F36; font-size: 2rem; margin-bottom: 10px; }
+        h1 .brand { color: #2A5288; }
+        .subtitle { color: #44505E; font-size: 1.1rem; }
+        .updated { color: #44505E; font-size: 0.9rem; margin-top: 10px; }
+        .card { background: #FFFDF6; border-radius: 16px; padding: 30px; margin-bottom: 20px; border: 1px solid #DCE3EB; }
+        h2 { color: #0D1F36; font-size: 1.3rem; margin-bottom: 15px; }
+        p { margin-bottom: 15px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+        strong { color: #0D1F36; }
+        .highlight { background: #FBF3DC; border-left: 4px solid #D9534F; padding: 15px 20px; border-radius: 0 8px 8px 0; margin: 20px 0; }
+        .highlight p { margin: 0; color: #0D1F36; font-weight: 500; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { text-align: left; padding: 12px 15px; border-bottom: 1px solid #DCE3EB; vertical-align: top; }
+        th { background: #EEF2F6; color: #0D1F36; font-weight: 600; }
+        tr:last-child td { border-bottom: none; }
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; white-space: nowrap; }
+        .badge-ads { background: #FFF1CC; color: #7A5300; }
+        .badge-silent { background: #E3EAF2; color: #2A5288; }
+        a { color: #2A5288; }
+        footer { text-align: center; padding: 30px 20px; color: #44505E; font-size: 0.9rem; }
+        footer a { text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            .container { padding: 20px 16px; }
+            h1 { font-size: 1.6rem; }
+            .card { padding: 20px; }
+            th, td { padding: 10px 8px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!-- Monsoon Sail mark: assets/icon/icon_192.png -->
+                <img alt="" src="data:image/png;base64,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">
+            </div>
+            <h1><span class="brand">Monsoon Sail</span> Privacy Policy</h1>
+            <p class="subtitle">Paper Boat</p>
+            <p class="updated">Last updated: 7 October 2026</p>
+        </header>
+
+        <div class="card">
+            <h2>In short</h2>
+            <div class="highlight">
+                <p>Monsoon Sail has no account, no sign-up and no server. Your progress stays on your phone.</p>
+            </div>
+            <p>We never receive anything about you. The only data that leaves the device is what Google's advertising SDK collects to show the occasional ad between runs, and that data contains nothing from your game. Monsoon Sail Pro removes the ads, and with them that data.</p>
+        </div>
+
+        <div class="card">
+            <h2>What stays on your phone</h2>
+            <p>Everything Monsoon Sail remembers is kept in one small file in the app's private storage on your device:</p>
+            <ul>
+                <li><strong>Your progress:</strong> your best distance, how many runs you have sailed, and the jasmine and coins you have collected</li>
+                <li><strong>Your boats:</strong> which paper boats you own, which one you sail, and your upgrade levels</li>
+                <li><strong>Missions:</strong> your current missions and how far along each one is</li>
+                <li><strong>Settings:</strong> sound, music, haptics, steering sensitivity and graphics quality</li>
+                <li><strong>Small things the game needs:</strong> whether you have seen the tip about sheltering under awnings, and a count of runs since the last ad, so the ad rules below work</li>
+            </ul>
+            <p>None of this is sent to us or to anyone else by the app. The game itself makes no network request of its own, and plays without a network.</p>
+            <p><strong>No cloud backup.</strong> Monsoon Sail does not take part in Android's backup, so your progress is not copied to your Google account. If you uninstall the app or move to a new phone, your progress starts again.</p>
+        </div>
+
+        <div class="card">
+            <h2>Advertising</h2>
+            <p>Monsoon Sail is free, and is paid for by an occasional full-screen ad. Ads appear only between runs, when you tap Sail again after a run: never in your first three runs, at most once every second run after that, and never twice within ninety seconds. There is never an ad while you are sailing, on the title screen or in the shop.</p>
+            <p>Ads are served by Google AdMob through the Google Mobile Ads SDK. The app asks only for ads suitable for a general audience (rated PG at most), and passes nothing about your game to the ads SDK. To serve and measure ads and to prevent fraud, the SDK collects and sends to Google:</p>
+            <ul>
+                <li>Device identifiers: your Android advertising ID and app set ID</li>
+                <li>Approximate location, derived from your IP address</li>
+                <li>Ad interactions: for example which ads were shown and whether they were tapped, and app launches</li>
+                <li>Diagnostics: crash logs and performance information about the ads SDK</li>
+            </ul>
+            <p>This data goes to Google, not to us, and is handled under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. See how Google uses information from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+            <p><strong>Consent.</strong> Where the law requires it, including in the European Economic Area, the United Kingdom and Switzerland, the app asks for your consent using Google's consent message before any ad is requested. You can change your choice later from the title screen, under "Privacy choices".</p>
+            <p><strong>Your controls.</strong> You can reset or delete your advertising ID at any time in your phone's settings, under Google, then Ads.</p>
+        </div>
+
+        <div class="card">
+            <h2>Permissions</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Permission</th><th>Why</th><th>Status</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Vibration</td><td>Short haptic taps when your boat bumps, hops or sinks. Switch them off on the title screen</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Internet and network state</td><td>Ads, and Google Play for the Pro purchase. The game makes no request of its own</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Billing</td><td>The optional one-time Monsoon Sail Pro purchase, through Google Play</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Advertising ID</td><td>Used by the Google Mobile Ads SDK</td><td><span class="badge badge-ads">Ads</span></td></tr>
+                        <tr><td>Wake lock and foreground service</td><td>Added by Google's ads library for its own background tasks</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Monsoon Sail does <strong>not</strong> ask for camera, storage, photo library, location, contacts, microphone, notifications, phone or SMS permission.</p>
+        </div>
+
+        <div class="card">
+            <h2>Purchases</h2>
+            <p>Monsoon Sail is free to play. <strong>Monsoon Sail Pro</strong> is one optional payment, not a subscription: it removes the ads and adds two cosmetic paper boats. A player with Pro never has the advertising SDK started at all.</p>
+            <p>Payment is handled entirely by Google Play. We never see your card or UPI details, billing address or any part of the transaction. The app keeps only a yes-or-no flag that Pro is yours, and asks Google Play again each time it starts, which is how Pro comes back after a reinstall (use Restore purchase in the shop's Pro tab). Google Play's privacy policy covers the payment itself.</p>
+            <p>Jasmine flowers and coins are collected while you sail and spent in the game on boats and upgrades; they cannot be bought with money and have no value outside the game.</p>
+        </div>
+
+        <div class="card">
+            <h2>Deleting your data</h2>
+            <ul>
+                <li>Uninstall the app, or clear its storage in Android settings, to remove everything it stored</li>
+                <li>Reset or delete your advertising ID in your phone's Google settings to break the link with past ad data</li>
+            </ul>
+            <p>There is nothing to request from us, because we hold nothing.</p>
+        </div>
+
+        <div class="card">
+            <h2>Children</h2>
+            <p>Monsoon Sail is made for teenagers and adults. It is not directed at children under 13, and the app itself collects no personal information from anyone. Ads are limited to content suitable for a general audience.</p>
+        </div>
+
+        <div class="card">
+            <h2>Changes to this policy</h2>
+            <p>If this policy changes, the updated version will appear here with a new date, and a material change will be noted in the app's release notes. If Monsoon Sail ever gained a feature that sent more data anywhere, such as cloud saves or leaderboards, it would be described here plainly before the feature shipped.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Questions about this policy or the game:</p>
+            <ul>
+                <li>Email: <a href="mailto:contact@futigo.io">contact@futigo.io</a></li>
+                <li>Website: <a href="https://futigo.io">futigo.io</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Monsoon Sail is made by <a href="https://futigo.io">Futigo</a>. Fold it, let it go, see how far it sails.</p>
+        </footer>
+    </div>
+</body>
+</html>
