@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - 10-Minute Rider</title>
+    <!-- System fonts on purpose, as in Monsoon Sail's and the Futigo reference
+         policy: a web font from a CDN would make this page fetch a third-party
+         resource on the reader's behalf. The logo is inlined for the same
+         reason (assets/icon/rider_art.png, 176 px).
+         Colours are the app mark's own (scripts/ui/logo.gd): night navy, the
+         helmet's cream, the bag's teal and the lamp's gold.
+         BEFORE PUBLISHING: the "Consent" paragraph describes the Privacy
+         choices link in the settings sheet (scripts/ui/settings_sheet.gd,
+         scripts/core/ads.gd, built). Also publish the GDPR message in AdMob
+         (Privacy and messaging), or no one is asked. Keep in step with the
+         release build's permissions (tools/build_release.sh --check-manifest),
+         the ad rules in data/ads.json and scripts/core/ad_rules.gd, and the
+         stored keys in scripts/core/save.gd (Save.KEYS). -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6; color: #45505F; background-color: #EDF1F6;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid #1F9E89; }
+        .logo { width: 88px; height: 88px; margin: 0 auto 20px; }
+        .logo img { width: 88px; height: 88px; border-radius: 20px; display: block; }
+        h1 { color: #0B1426; font-size: 2rem; margin-bottom: 10px; }
+        h1 .brand { color: #183365; }
+        .subtitle { color: #45505F; font-size: 1.1rem; }
+        .updated { color: #45505F; font-size: 0.9rem; margin-top: 10px; }
+        .card { background: #FFFFFF; border-radius: 16px; padding: 30px; margin-bottom: 20px; border: 1px solid #DAE2EC; }
+        h2 { color: #0B1426; font-size: 1.3rem; margin-bottom: 15px; }
+        p { margin-bottom: 15px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+        strong { color: #0B1426; }
+        .highlight { background: #F6F3EA; border-left: 4px solid #1F9E89; padding: 15px 20px; border-radius: 0 8px 8px 0; margin: 20px 0; }
+        .highlight p { margin: 0; color: #0B1426; font-weight: 500; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { text-align: left; padding: 12px 15px; border-bottom: 1px solid #DAE2EC; vertical-align: top; }
+        th { background: #EDF1F6; color: #0B1426; font-weight: 600; }
+        tr:last-child td { border-bottom: none; }
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; white-space: nowrap; }
+        .badge-ads { background: #FFF1CC; color: #7A5300; }
+        .badge-silent { background: #DDF3EE; color: #12695B; }
+        a { color: #183365; }
+        footer { text-align: center; padding: 30px 20px; color: #45505F; font-size: 0.9rem; }
+        footer a { text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            .container { padding: 20px 16px; }
+            h1 { font-size: 1.6rem; }
+            .card { padding: 20px; }
+            th, td { padding: 10px 8px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!-- 10-Minute Rider mark: assets/icon/rider_art.png -->
+                <img alt="" src="data:image/jpeg;base64,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">
+            </div>
+            <h1><span class="brand">10-Minute Rider</span> Privacy Policy</h1>
+            <p class="subtitle">Indian Roads</p>
+            <p class="updated">Last updated: 10 October 2026</p>
+        </header>
+
+        <div class="card">
+            <h2>In short</h2>
+            <div class="highlight">
+                <p>10-Minute Rider has no account, no sign-up and no server. Your progress stays on your phone.</p>
+            </div>
+            <p>We never receive anything about you. The only data that leaves the device is what Google's advertising SDK collects to show ads between rides, and that data contains nothing from your game. 10-Minute Rider Pro removes the ads, and with them that data.</p>
+            <p>10-Minute Rider is a game. It is not a delivery service and is not connected to any delivery or grocery app. The orders, customers, addresses and OTPs in it are made up by the game.</p>
+        </div>
+
+        <div class="card">
+            <h2>What stays on your phone</h2>
+            <p>Everything 10-Minute Rider remembers is kept in one small file in the app's private storage on your device:</p>
+            <ul>
+                <li><strong>Your progress:</strong> your best free-ride distance, the most orders you have delivered in one shift, how many times you have ridden, and the tips (game rupees) and coins you have collected</li>
+                <li><strong>Your garage:</strong> which bikes you own, which one you ride, and your upgrade levels</li>
+                <li><strong>Missions:</strong> your current missions and how far along each one is</li>
+                <li><strong>Settings:</strong> sound, music, haptics, reduced motion, steering sensitivity and graphics quality</li>
+                <li><strong>Small things the game needs:</strong> a count of rides since the last ad, so the ad rules below work, and whether you own Pro, as Google Play last told the app</li>
+            </ul>
+            <p>None of this is sent to us or to anyone else by the app. The game makes no network request of its own, and plays without a network. The "phone", its battery and the OTPs in the game are part of the game: the app never reads your real phone's messages, contacts or battery.</p>
+            <p><strong>No cloud backup.</strong> 10-Minute Rider does not take part in Android's backup, so your progress is not copied to your Google account. If you uninstall the app or move to a new phone, your progress starts again.</p>
+        </div>
+
+        <div class="card">
+            <h2>Advertising</h2>
+            <p>10-Minute Rider is free, and is paid for by ads. There are two kinds, and neither ever appears while you are riding:</p>
+            <ul>
+                <li><strong>A full-screen ad between rides,</strong> when you tap Ride again or Home on the result card: never in your first three rides, at most once every second ride after that, and never twice within ninety seconds</li>
+                <li><strong>A banner</strong> at the bottom of the screen while the result card is showing, gone as soon as you leave it</li>
+            </ul>
+            <p>There is never an ad while you ride, on the title screen, in the garage or at a customer's door.</p>
+            <p>Ads are served by Google AdMob through the Google Mobile Ads SDK. The app asks only for ads suitable for a general audience (rated PG at most), and passes nothing about your game to the ads SDK. To serve and measure ads and to prevent fraud, the SDK collects and sends to Google:</p>
+            <ul>
+                <li>Device identifiers: your Android advertising ID and app set ID</li>
+                <li>Approximate location, derived from your IP address</li>
+                <li>Ad interactions: for example which ads were shown and whether they were tapped, and app launches</li>
+                <li>Diagnostics: crash logs and performance information about the ads SDK</li>
+            </ul>
+            <p>This data goes to Google, not to us, and is handled under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. See how Google uses information from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+            <p><strong>Consent.</strong> Where the law requires it, including in the European Economic Area, the United Kingdom and Switzerland, the app asks for your consent using Google's consent message before any ad is requested. You can change your choice later: tap the gear on the title screen, then "Privacy choices".</p>
+            <p><strong>Your controls.</strong> You can reset or delete your advertising ID at any time in your phone's settings, under Google, then Ads.</p>
+        </div>
+
+        <div class="card">
+            <h2>Permissions</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Permission</th><th>Why</th><th>Status</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Vibration</td><td>Short haptic taps when you hit a pothole, pull a close shave or take a tumble. Switch them off in the settings or the pause menu</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Internet and network state</td><td>Ads, and Google Play for the Pro purchase. The game makes no request of its own</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Billing</td><td>The optional one-time 10-Minute Rider Pro purchase, through Google Play</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                        <tr><td>Advertising ID</td><td>Used by the Google Mobile Ads SDK</td><td><span class="badge badge-ads">Ads</span></td></tr>
+                        <tr><td>Wake lock and foreground service</td><td>Added by Google's ads library for its own background tasks</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>10-Minute Rider does <strong>not</strong> ask for camera, storage, photo library, location, contacts, microphone, notifications, phone or SMS permission.</p>
+        </div>
+
+        <div class="card">
+            <h2>Purchases</h2>
+            <p>10-Minute Rider is free to play. <strong>10-Minute Rider Pro</strong> is one optional payment, not a subscription: it removes the ads and adds two cosmetic paint jobs for the old scooter. A player with Pro never has the advertising SDK started at all.</p>
+            <p>Payment is handled entirely by Google Play. We never see your card or UPI details, billing address or any part of the transaction. The app keeps only a yes-or-no flag that Pro is yours, and asks Google Play again each time it starts, which is how Pro comes back after a reinstall (use Restore purchase in the garage's Pro tab). Google Play's privacy policy covers the payment itself.</p>
+            <p>The tips (shown in rupees) and coins are collected while you ride and spent in the game on bikes and upgrades. They are game money: they cannot be bought with real money, cannot be withdrawn, and have no value outside the game.</p>
+        </div>
+
+        <div class="card">
+            <h2>Deleting your data</h2>
+            <ul>
+                <li>Uninstall the app, or clear its storage in Android settings, to remove everything it stored</li>
+                <li>Reset or delete your advertising ID in your phone's Google settings to break the link with past ad data</li>
+            </ul>
+            <p>There is nothing to request from us, because we hold nothing.</p>
+        </div>
+
+        <div class="card">
+            <h2>Children</h2>
+            <p>10-Minute Rider is made for teenagers and adults. It is not directed at children under 13, and the app itself collects no personal information from anyone. Ads are limited to content suitable for a general audience.</p>
+        </div>
+
+        <div class="card">
+            <h2>Changes to this policy</h2>
+            <p>If this policy changes, the updated version will appear here with a new date, and a material change will be noted in the app's release notes. If 10-Minute Rider ever gained a feature that sent more data anywhere, such as cloud saves or leaderboards, it would be described here plainly before the feature shipped.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Questions about this policy or the game:</p>
+            <ul>
+                <li>Email: <a href="mailto:contact@futigo.io">contact@futigo.io</a></li>
+                <li>Website: <a href="https://futigo.io">futigo.io</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>10-Minute Rider is made by <a href="https://futigo.io">Futigo</a>. Ride safe out there.</p>
+        </footer>
+    </div>
+</body>
+</html>
