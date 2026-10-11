@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Power Cut: Torch &amp; Seek</title>
+    <!-- System fonts on purpose, as in 10-Minute Rider's and Monsoon Sail's
+         policies: a web font from a CDN would make this page fetch a
+         third-party resource on the reader's behalf. The logo is inlined for
+         the same reason (assets/icon/src/logo_master.png, 176 px).
+         Colours are the game's own (scripts/ui/hud.gd): night indigo, the
+         torch's gold and the paper cream.
+         BEFORE PUBLISHING: publish the GDPR message in AdMob (Privacy and
+         messaging), or no one is asked. Keep in step with the release
+         build's permissions (PLAY_STORE_PACKAGES.md section 4), the ad rules
+         in data/ads.json and scripts/core/ad_rules.gd, and the stored keys
+         in scripts/core/save.gd (Save.KEYS). -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6; color: #45475A; background-color: #EEEDF6;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid #E0A93A; }
+        .logo { width: 88px; height: 88px; margin: 0 auto 20px; }
+        .logo img { width: 88px; height: 88px; border-radius: 20px; display: block; }
+        h1 { color: #1D1A2B; font-size: 2rem; margin-bottom: 10px; }
+        .subtitle { color: #45475A; font-size: 1.1rem; }
+        .updated { color: #45475A; font-size: 0.9rem; margin-top: 10px; }
+        .card { background: #FFFFFF; border-radius: 16px; padding: 30px; margin-bottom: 20px; border: 1px solid #DCDAEA; }
+        h2 { color: #1D1A2B; font-size: 1.3rem; margin-bottom: 15px; }
+        p { margin-bottom: 15px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+        strong { color: #1D1A2B; }
+        .highlight { background: #FFF6E3; border-left: 4px solid #E0A93A; padding: 15px 20px; border-radius: 0 8px 8px 0; margin: 20px 0; }
+        .highlight p { margin: 0; color: #1D1A2B; font-weight: 500; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { text-align: left; padding: 12px 15px; border-bottom: 1px solid #DCDAEA; vertical-align: top; }
+        th { background: #EEEDF6; color: #1D1A2B; font-weight: 600; }
+        tr:last-child td { border-bottom: none; }
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; white-space: nowrap; }
+        .badge-ads { background: #FFF1CC; color: #7A5300; }
+        .badge-silent { background: #E6E4F6; color: #37308F; }
+        a { color: #37308F; }
+        footer { text-align: center; padding: 30px 20px; color: #45475A; font-size: 0.9rem; }
+        footer a { text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 600px) {
+            .container { padding: 20px 16px; }
+            h1 { font-size: 1.6rem; }
+            .card { padding: 20px; }
+            th, td { padding: 10px 8px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><img src="data:image/jpeg;base64,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" alt="Power Cut: Torch &amp; Seek"></div>
+            <h1>Power Cut Privacy Policy</h1>
+            <p class="subtitle">Torch &amp; Seek</p>
+            <p class="updated">Last updated: 11 October 2026</p>
+        </header>
+
+        <div class="card">
+            <h2>In short</h2>
+            <div class="highlight">
+                <p>Power Cut has no account, no sign-up and no server. Your progress stays on your phone.</p>
+            </div>
+            <p>We never receive anything about you. The only data that leaves the device is what Google's advertising SDK collects to show ads between nights, and that data contains nothing from your game.</p>
+            <p>Power Cut is a game. The torch is drawn on the screen: the app never turns on your phone's real flashlight or uses its camera.</p>
+        </div>
+
+        <div class="card">
+            <h2>What stays on your phone</h2>
+            <p>Everything Power Cut remembers is kept in one small file in the app's private storage on your device:</p>
+            <ul>
+                <li><strong>Your progress:</strong> how many nights you have lit up and the stars you earned, and the best stars for the first few rooms</li>
+                <li><strong>Settings:</strong> sound, vibration and Brighter dark</li>
+                <li><strong>Small things the game needs:</strong> how many times you have played, and how many plays since the last ad, so the ad rules below work</li>
+            </ul>
+            <p>None of this is sent to us or to anyone else by the app. The game makes no network request of its own, and plays without a network.</p>
+            <p><strong>No cloud backup.</strong> Power Cut does not take part in Android's backup, so your progress is not copied to your Google account. If you uninstall the app or move to a new phone, your progress starts again.</p>
+        </div>
+
+        <div class="card">
+            <h2>Advertising</h2>
+            <p>Power Cut is free, and is paid for by ads. There is one kind, and it never appears while you are playing:</p>
+            <ul>
+                <li><strong>A full-screen ad between nights,</strong> when you go on from the result card to the next night, or tap Try again: never in your first five plays, at most once every third play after that, and never twice within two minutes</li>
+            </ul>
+            <p>There is never an ad during a night, on the title screen or in the pause menu, and there are no banner ads.</p>
+            <p>Ads are served by Google AdMob through the Google Mobile Ads SDK. The app asks only for ads suitable for a general audience (rated PG at most), and passes nothing about your game to the ads SDK. To serve and measure ads and to prevent fraud, the SDK collects and sends to Google:</p>
+            <ul>
+                <li><strong>Device identifiers:</strong> your Android advertising ID and app set ID</li>
+                <li><strong>Approximate location,</strong> derived from your IP address</li>
+                <li><strong>Ad interactions:</strong> for example which ads were shown and whether they were tapped, and app launches</li>
+                <li><strong>Diagnostics:</strong> crash logs and performance information about the ads SDK</li>
+            </ul>
+            <p>This data goes to Google, not to us, and is handled under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. See how Google uses information from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+            <p><strong>Consent.</strong> Where the law requires it, including in the European Economic Area, the United Kingdom and Switzerland, the app asks for your consent using Google's consent message before any ad is requested. You can change your choice later: tap "Privacy choices" on the title screen.</p>
+            <p><strong>Your controls.</strong> You can reset or delete your advertising ID at any time in your phone's settings, under Google, then Ads.</p>
+        </div>
+
+        <div class="card">
+            <h2>Permissions</h2>
+            <div class="table-wrap">
+                <table>
+                    <tr><th>Permission</th><th>Why</th><th>Status</th></tr>
+                    <tr><td>Vibration</td><td>Short haptic taps when you find something, startle the cat or smack the torch. Switch them off in the pause menu</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                    <tr><td>Internet and network state</td><td>Ads. The game makes no request of its own</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                    <tr><td>Advertising ID</td><td>Used by the Google Mobile Ads SDK</td><td><span class="badge badge-ads">Ads</span></td></tr>
+                    <tr><td>Wake lock and foreground service</td><td>Added by Google's ads library for its own background tasks</td><td><span class="badge badge-silent">Silent</span></td></tr>
+                </table>
+            </div>
+            <p>Power Cut does not ask for camera, flashlight, storage, photo library, location, contacts, microphone, notifications, phone or SMS permission.</p>
+        </div>
+
+        <div class="card">
+            <h2>Purchases</h2>
+            <p>Power Cut has no purchases. Everything in the game is free to play.</p>
+        </div>
+
+        <div class="card">
+            <h2>Deleting your data</h2>
+            <ul>
+                <li>Uninstall the app, or clear its storage in Android settings, to remove everything it stored</li>
+                <li>Reset or delete your advertising ID in your phone's Google settings to break the link with past ad data</li>
+            </ul>
+            <p>There is nothing to request from us, because we hold nothing.</p>
+        </div>
+
+        <div class="card">
+            <h2>Children</h2>
+            <p>Power Cut is made for teenagers and adults. It is not directed at children under 13, and the app itself collects no personal information from anyone. Ads are limited to content suitable for a general audience.</p>
+        </div>
+
+        <div class="card">
+            <h2>Changes to this policy</h2>
+            <p>If this policy changes, the updated version will appear here with a new date, and a material change will be noted in the app's release notes. If Power Cut ever gained a feature that sent more data anywhere, such as cloud saves or leaderboards, it would be described here plainly before the feature shipped.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Questions about this policy or the game:</p>
+            <ul>
+                <li>Email: <a href="mailto:contact@futigo.io">contact@futigo.io</a></li>
+                <li>Website: <a href="https://futigo.io">futigo.io</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Power Cut: Torch &amp; Seek is made by <a href="https://futigo.io">Futigo</a>. Light aa gayi!</p>
+        </footer>
+    </div>
+</body>
+</html>
