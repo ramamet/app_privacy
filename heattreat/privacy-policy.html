@@ -25,57 +25,78 @@
 </head>
 <body>
 <h1>HeatTreat Privacy Policy</h1>
-<p class="updated">Last updated: 26 July 2026</p>
+<p class="updated">Last updated: 12 October 2026</p>
 
-<p>HeatTreat is an offline steel heat treatment calculator and reference. It
-computes critical temperatures, retained austenite, tempering equivalence and
-carbon equivalents from published correlations, entirely on your device. It
-has no account, no server, and no way to reach the internet. This policy
-explains, plainly, what that means.</p>
+<p>HeatTreat is a steel heat treatment calculator and reference. It computes
+critical temperatures, hardness, hardenability, tempering, weld preheat and
+carburizing estimates from published correlations, entirely on your device. It
+has no account and no server of ours. HeatTreat is free, and it pays for itself
+with an occasional full-screen ad served by Google AdMob. This policy explains,
+plainly, what that means.</p>
 
 <h2>The short version</h2>
 <ul>
-  <li>HeatTreat does not collect, store remotely, or transmit any personal data.</li>
-  <li>There is no account and no sign-up.</li>
-  <li>There are no ads, no analytics, and no tracking of any kind.</li>
-  <li>The app holds no internet permission. It cannot make a network call, even by accident.</li>
+  <li>Every calculation runs on your phone. What you type into HeatTreat never leaves it.</li>
+  <li>There is no account, no sign-up and no analytics.</li>
+  <li>We never receive anything about you.</li>
+  <li>The only data that leaves the device is what Google's advertising SDK collects to show ads, and it contains nothing you did in the app beyond seeing an ad.</li>
 </ul>
 
 <h2>What the app stores, and where</h2>
-<p>HeatTreat stores exactly one thing: whether you prefer Celsius or
-Fahrenheit. That single preference lives in the app's private storage on your
-device so the app remembers it next time you open it. Nothing else is written
-anywhere.</p>
+<p>HeatTreat keeps three things in the app's private storage on your device:</p>
+<ul>
+  <li><strong>Your temperature unit:</strong> whether you prefer Celsius or Fahrenheit</li>
+  <li><strong>When the app was first opened:</strong> so that no ad appears in your first two minutes with it</li>
+  <li><strong>Your ad consent choice</strong>, where the law asks for one: stored by Google's consent tool so you are not asked again each time</li>
+</ul>
 
 <p>The composition you type into the calculator, the grade you look up, and
-the tempering figures you enter are held in memory only while you are using
-the screen. They are not saved to disk, not kept in a history, and not sent
-anywhere. Close the app and they are gone.</p>
-
-<h2>No network access at all</h2>
-<p>Most apps that promise privacy still ship with the ability to reach the
-internet and simply choose not to use it. HeatTreat does not have that
-ability. The release build declares no INTERNET permission, which means
-Android itself will refuse any network request the app might make. You can
-verify this on the app's Play Store listing, where the permissions section
-will show none, or with any APK inspection tool.</p>
+the figures you enter are held in memory only while you are using the screen.
+They are not saved to disk, not kept in a history, and not sent anywhere, to us,
+to Google or to anyone else. Close the app and they are gone.</p>
 
 <p>The grade database, all equations, and all citations are bundled inside the
-app. Nothing is fetched, and there is nothing to fetch.</p>
+app. Every calculation works with no connection at all.</p>
 
-<h2>What the app does not collect</h2>
-<p>HeatTreat does not collect names, email addresses, contacts, location,
-photos, device identifiers, usage analytics, crash reports, or any other
-personal information. It does not know which grades you looked at, what
-chemistry you entered, or that you opened it at all. There is no mechanism by
-which it could report any of this.</p>
+<h2>Advertising</h2>
+<p>HeatTreat shows an occasional full-screen ad at one natural break: when you
+come back from a set of results you have been reading for at least ten
+seconds. There is never an ad while you enter a composition or read results,
+when the app opens, or in your first two minutes with the app. Ads are at
+least three minutes apart, with no more than four each time you use the
+app.</p>
+
+<p>Ads are served by Google AdMob through the Google Mobile Ads SDK. The app
+asks for ads suitable for teens and adults only (rated PG at most), and passes
+nothing about your steels, your calculations or your use of the app to the ads
+SDK. To serve and measure ads and to prevent fraud, the SDK collects and sends
+to Google:</p>
+<ul>
+  <li><strong>Device identifiers:</strong> your Android advertising ID and app set ID</li>
+  <li><strong>Approximate location</strong>, derived from your IP address</li>
+  <li><strong>Ad interactions:</strong> for example which ads were shown and whether they were tapped, and app launches</li>
+  <li><strong>Diagnostics:</strong> crash logs and performance information about the ads SDK</li>
+</ul>
+<p>This data goes to Google, not to us, and is handled under
+<a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. See how
+Google uses information from apps that use its services at
+<a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+<p><strong>Consent.</strong> Where the law requires it, including in the European
+Economic Area, the United Kingdom and Switzerland, the app asks for your
+consent using Google's consent message before any ad is requested. You can
+change your choice later on the Reference tab, under "Privacy options".</p>
+<p><strong>Your controls.</strong> You can reset or delete your advertising ID at
+any time in your phone's settings, under Google, then Ads.</p>
 
 <h2>Permissions</h2>
-<p>HeatTreat requests no runtime permissions. It does not ask for camera,
-photos, storage, microphone, location, contacts, or notifications. The only
-entry in its manifest is an Android system permission that the app defines for
-itself, which grants no access to your device or your data and is added
-automatically by the Android support libraries.</p>
+<p>HeatTreat asks you for no permissions. It does not ask for camera, photos,
+storage, microphone, location, contacts, or notifications. Its manifest
+declares:</p>
+<ul>
+  <li><strong>Internet and network state:</strong> used only by the ads SDK. The app makes no network request of its own.</li>
+  <li><strong>Advertising ID:</strong> used by the ads SDK, as above.</li>
+  <li><strong>Wake lock and foreground service:</strong> added by Google's ads library for its own background tasks.</li>
+</ul>
 
 <h2>Estimates, not specifications</h2>
 <p>HeatTreat gives engineering estimates from published empirical
@@ -88,8 +109,10 @@ standard, your supplier's data, and your own test coupons before committing
 work.</p>
 
 <h2>Children</h2>
-<p>HeatTreat does not knowingly collect any data from anyone, including
-children. There is nothing to collect.</p>
+<p>HeatTreat is made for adults and older students working with steel: knife
+makers, blacksmiths, heat treaters, students and engineers. It is not directed
+at children under 13, and the app itself collects no personal information from
+anyone.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy ever changes, the updated version will be posted at this same
