@@ -194,7 +194,7 @@
         </div>
         <h1>KiddoSick Privacy Policy</h1>
         <p class="subtitle">A fever log and medicine timer for children</p>
-        <p class="updated">Last updated: 5 August 2026</p>
+        <p class="updated">Last updated: 2 November 2026</p>
     </header>
 
     <div class="card">
@@ -236,8 +236,9 @@
             sensitive as data gets. It is treated accordingly.</p>
         <p>Everything lives in app-private storage on your device: temperatures
             with the unit and the site you measured at, medicines and the
-            intervals you entered, doses, symptoms, free-text notes, illness
-            episodes, and each child's profile.</p>
+            intervals you entered, doses, symptoms (including wet nappies and
+            drinks, if you count them), free-text notes, illness episodes, any
+            photographs you attach, and each child's profile.</p>
         <p>None of it is analysed by us, because none of it reaches us. The
             countdowns, the fever-free clock, the recurring-pattern strip and
             every alert are worked out on your phone, from your own entries,
@@ -266,6 +267,12 @@
             few weeks, that can be months of the evidence a doctor asked them to
             collect. Losing that to a dropped phone is a worse outcome than the
             backup, so the backup is on.</p>
+        <p><strong>Photographs are not part of this backup.</strong> Android
+            gives each app a limited backup allowance, and a few photos could
+            use it up — at which point Android stops backing up the app at all,
+            the illness record with it. So the backup carries the record and the
+            settings, and any photographs stay only on the phone that took
+            them.</p>
         <p><strong>You can turn it off.</strong> It is your Google account, not
             ours: <em>Settings &rarr; Google &rarr; Backup</em> on most phones, either
             for everything or for KiddoSick alone. Nothing in the app depends on
@@ -280,17 +287,26 @@
     <div class="card">
         <span class="icon">📷</span>
         <h2>Photographs</h2>
-        <p>You can give each child a picture. It is entirely optional, and the
-            bundled illustrations are there so you never have to put a photograph
-            of a child into an app at all.</p>
-        <p>If you do choose one, it is copied into a private folder belonging to
+        <p>There are two places a photograph can go, and both are optional.</p>
+        <ul>
+            <li><strong>A child's profile picture.</strong> The bundled
+                illustrations are there so you never have to put a photograph of
+                a child into an app at all.</li>
+            <li><strong>A photo on a symptom entry</strong> — a rash, say, that a
+                doctor will want to see after it has faded. You can take one
+                there and then, or pick one you already have.</li>
+        </ul>
+        <p>Either way the picture is copied into a private folder belonging to
             this app alone, resized down as it arrives, and never uploaded. No
-            other app on your phone can read it. It does not appear in your shared
-            photo library.</p>
+            other app on your phone can read it, and it does not appear in your
+            shared photo library. Photographs are not included in the Google
+            backup or in the export file (see those sections), so they stay on
+            this phone. Uninstalling the app removes every one of them.</p>
         <p><strong>KiddoSick asks for no camera permission and no photo library
-            permission.</strong> Pictures come through your phone's own photo
-            picker, which hands back only the single image you chose and shows us
-            nothing else.</p>
+            permission.</strong> A new photo is taken by your phone's own camera
+            app, and an existing one comes through your phone's own photo picker;
+            each hands back only the single image you chose and shows us nothing
+            else.</p>
     </div>
 
     <div class="card">
@@ -389,7 +405,8 @@
         <h2>Export and Import</h2>
         <p>Export is free, and it covers everything the app has recorded — every
             child, every reading, every dose, every symptom and note — as a single
-            JSON file.</p>
+            JSON file. The one exception is photographs, which are not put in the
+            file and stay on the phone that took them.</p>
         <p>The file is generated on your phone. Nothing is uploaded to make it.
             Where it goes afterwards is entirely your choice, through your phone's
             usual share options, and at that point it is covered by whatever app
